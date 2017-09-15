@@ -1,0 +1,20 @@
+# gansutian site v3
+gansutianqi official site,build on top of [october CMS](https://github.com/octobercms/october).
+
+## install
++ install october CMS via composer `composer create-project october/october PROJECT_NAME`
++ setting `'disableCoreUpdates' => true` in `config/cms.php`
++ `php artisan october:install`
++ run `php artisan october:env` generate a `.env` file for common config
++ make `storage` and `themes` directory writable.
++ before update october,you need run `composer update` first,then run `php artisan october:update`
++ remove some files `rm .gitattributes README.md`
++ install dependence plugins
+    + install october.dirvers `php artisan plugin:install October.Drivers`
+    + install rainlab.user `php artisan plugin:install RainLab.User`
++ clone this repository
+    + in the project root directory run `git init`
+    + `git remote add origin https://github.com/gansutianqi/gansutianqi-site-v3.git`
+    + `git pull origin master`
++ after pull completed
+    + install buuug7.news `php artisan plugin:refresh Buuug7.News`
