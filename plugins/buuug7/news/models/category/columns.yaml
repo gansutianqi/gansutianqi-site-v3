@@ -8,6 +8,8 @@ columns:
         searchable: true
     slug:
         label: buuug7.news::lang.common.slug
+    post_count:
+        label: buuug7.news::lang.category.post_count
     created_at:
         label: buuug7.news::lang.common.created_at
         type: datetime

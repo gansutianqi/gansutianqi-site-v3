@@ -3,6 +3,63 @@
 # ===================================
 
 fields:
-    id:
-        label: ID
-        disabled: true
+    title:
+        label: buuug7.news::lang.post.title
+        span: left
+    slug:
+        label: buuug7.news::lang.common.slug
+        preset: title
+        span: right
+tabs:
+    fields:
+        content:
+            tab: buuug7.news::lang.post.content
+            type: richeditor
+            size: large
+        summary:
+            tab: buuug7.news::lang.post.summary
+            type: textarea
+        categories:
+            tab: buuug7.news::lang.post.categories
+            type: relation
+            span: auto
+        files:
+            tab: buuug7.news::lang.post.files
+            type: repeater
+            form:
+                fields:
+                    file_path:
+                        label: buuug7.news::lang.post.file_path
+                        type: mediafinder
+                        mode: file
+                        span: auto
+                    file_name:
+                        label: buuug7.news::lang.post.file_name
+                        span: auto
+secondaryTabs:
+    fields:
+        image:
+            label: buuug7.news::lang.post.image
+            type: mediafinder
+            mode: image
+        published:
+            label: buuug7.news::lang.post.published
+            type: checkbox
+            span: auto
+        published_at:
+            label: buuug7.news::lang.post.published_at
+            type: datepicker
+            model: datetime
+            trigger:
+                action: enable
+                field: published
+                condition: checked
+        featured:
+            label: buuug7.news::lang.post.featured
+            type: checkbox
+            span: auto
+
+
+
+
+

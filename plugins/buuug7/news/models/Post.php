@@ -62,7 +62,7 @@ class Post extends Model
     public $belongsToMany = [
         'categories' => [
             'Buuug7\News\Models\Category',
-            'table' => 'Buuug7_news_posts_categories',
+            'table' => 'buuug7_news_posts_categories',
         ],
     ];
     public $morphTo = [];

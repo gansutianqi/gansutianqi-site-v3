@@ -64,9 +64,15 @@ class Category extends Model
         return $categories;
     }
 
-    public function beforeSave(){
-        if($this->parent_id == ''){
+    public function beforeSave()
+    {
+        if ($this->parent_id == '') {
             $this->parent_id = null;
         }
+    }
+
+    public function getPostCountAttribute()
+    {
+        return $this->posts()->count();
     }
 }
