@@ -81,6 +81,7 @@ class Plugin extends PluginBase
                 'tab' => '新闻',
                 'label' => '管理新闻审核',
             ],
+
         ];
     }
 
