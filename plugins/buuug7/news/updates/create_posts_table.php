@@ -11,18 +11,16 @@ class CreatePostsTable extends Migration
         Schema::create('buuug7_news_posts', function(Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->increments('id');
-            $table->integer('user_id')->unsigned()->nullable();
+            $table->integer('backend_user_id')->unsigned()->nullable();
             $table->string('title');
             $table->string('slug');
             $table->text('summary')->nullable();
             $table->longText('content')->nullable();
             $table->text('image')->nullable();
             $table->text('files');
-            $table->text('images');
             $table->timestamp('published_at')->nullable();
             $table->boolean('published')->default(false);
             $table->boolean('featured')->default(false);
-            $table->boolean('top')->default(false);;
             $table->timestamps();
         });
     }

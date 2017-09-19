@@ -1,0 +1,19 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    parent_id:
+        label: buuug7.news::lang.category.parent_id
+        type: dropdown
+    name:
+        label: buuug7.news::lang.category.name
+        span: left
+    slug:
+        label: buuug7.news::lang.common.slug
+        preset: name
+        span: right
+    description:
+        label: buuug7.news::lang.category.description
+        type: textarea
+        size: small
