@@ -50,10 +50,8 @@ class Plugin extends PluginBase
      */
     public function registerComponents()
     {
-        return []; // Remove this line to activate
-
         return [
-            'Buuug7\News\Components\MyComponent' => 'myComponent',
+            'Buuug7\News\Components\Post' => 'newsPost',
         ];
     }
 

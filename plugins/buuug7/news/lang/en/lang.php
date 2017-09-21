@@ -28,6 +28,8 @@ return [
         'featured' => 'Featured',
         'categories' => 'Categories',
         'published_at' => 'Published at',
+        'post_component_name' => 'Post',
+        'post_component_description' => 'Display a news post on the page.',
     ],
     'posts' => [
         
