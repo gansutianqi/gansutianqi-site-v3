@@ -1,0 +1,141 @@
+.article {
+  .article-left {
+    //box-shadow: 1px 1px 4px 1px #d7d7d7;
+    // background: #ffffff;
+    .tab-v1 {
+      .nav {
+        li {
+          text-align: center;
+          a {
+            width: 60px;
+            color: #1d2124;
+            text-decoration: none;
+            border: none;
+            display: block;
+          }
+          a:hover {
+            text-decoration: none;
+          }
+          .active {
+            background: #ff4400;
+            color: #ffffff;
+          }
+        }
+
+      }
+      .nav-tabs {
+        border-bottom: 1px solid #ff4400;
+
+      }
+
+      .tab-content {
+        .media {
+
+        }
+
+        .media-article-list {
+          border-bottom: 1px solid #ddd;
+          padding: 15px 0;
+          .media-left {
+            padding-right: 25px;
+            > img {
+              width: 150px;
+              height: 115px;
+              //border:1px solid red;
+            }
+          }
+          .media-body {
+            .media-heading {
+              font-size: 1.2em;
+              font-weight: bold;
+              color: #333;
+            }
+            p {
+              color: #555;
+            }
+            .time {
+              color: #888;
+            }
+            .keywords {
+              color: #888;
+              padding: 0 15px;
+            }
+          }
+        }
+
+        @media (max-width: 480px) {
+          .hidden-xxs {
+            display: none !important;
+          }
+        }
+
+      }
+
+    }
+
+  }
+  .article-right {
+    .panel {
+      background: none;
+      border-top: 0;
+      border-left: 0;
+      border-right: 0;
+      .list-group-item {
+        background: none;
+        a {
+          text-decoration: none;
+          color: #0f0f0f;
+        }
+        a:hover {
+          color: #ff4400;
+        }
+      }
+    }
+  }
+}
+
+.article-content {
+  //内容
+  .article-body {
+    box-shadow: 1px 1px 4px 1px #d7d7d7;
+    padding: 25px;
+    background: darken(#fff, 5%);
+    #ctrlfscont > p {
+      line-height: 35px;
+      text-indent: 2em;
+
+    }
+    #ctrlfscont > #moreread > ul li {
+      line-height: 35px;
+    }
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%
+    }
+
+    .title {
+      font-size: 1.8em;
+      font-weight: bold;
+      padding: 15px 0;
+      text-align: center;
+    }
+
+    .info {
+      color: #888;
+      text-align: center;
+      .time {
+
+      }
+      .from {
+        padding: 0 15px;
+      }
+    }
+  }
+  .article-right {
+    .panel {
+      box-shadow: 1px 1px 4px 1px #d7d7d7;
+    }
+  }
+
+}

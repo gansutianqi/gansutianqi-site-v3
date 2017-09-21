@@ -16,16 +16,30 @@ gulp.task('fileinclude', function () {
         .pipe(gulp.dest('dist'));
 });
 
-gulp.task('copy:libs',function () {
-    return gulp.src('src/libs/**/*')
-        .pipe(gulp.dest('dist/libs'));
+
+/*拷贝*/
+gulp.task('copy:src', function () {
+    return gulp.src('src/**/*')
+        .pipe(gulp.dest('dist/'));
 });
 
-var del = require('del');
+/*gulp.task('copy:images',function () {
+    return gulp .src('src/images/!**!/!*')
+        .pipe(gulp.dest('dist/images'))
+});
 
-gulp.task('clean',function () {
+gulp.task('copy:scripts',function () {
+   return gulp .src('src/scripts/!**!/!*')
+       .pipe(gulp.dest('dist/scripts'))
+});*/
+
+
+/*清空dist*/
+var del = require('del');
+gulp.task('clean', function () {
     return del('dist');
 });
+
 
 var plumber = require('gulp-plumber');
 var sass = require('gulp-sass');
@@ -44,10 +58,11 @@ gulp.task('styles', function () {
         .pipe(gulp.dest('./src/styles')); // 仅仅为了提示
 });
 
+
 /* 时时更新*/
 var browserSync = require('browser-sync');
 var reload = browserSync.reload;
-gulp.task('serve', function() {
+gulp.task('serve', function () {
     browserSync({
         server: {
             baseDir: 'dist'
@@ -55,18 +70,15 @@ gulp.task('serve', function() {
     });
     gulp.watch(['src/**/*.html'], ['fileinclude', browserSync.reload]);
     gulp.watch(['dist/**/*.html'], browserSync.reload);
-    gulp.watch(['src/styles/**/*.scss'],['styles',browserSync.reload]);
+    gulp.watch(['src/styles/**/*.scss'], ['styles', browserSync.reload]);
 });
 
 
 var runSequence = require('run-sequence');
-
-
 gulp.task('default', function () {
     runSequence('clean',
-        'copy:libs',
+        'copy:src',
         'fileinclude',
-        'styles',
         'serve');
 });
 

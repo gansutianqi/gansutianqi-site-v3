@@ -1,0 +1,104 @@
+@charset "UTF-8";
+// 轮播
+.carousel {
+  .carousel-indicators {
+    .active {
+      background-color: #328DF9;
+    }
+  }
+}
+
+//解决方案
+.solution {
+  //background: #ffffff;
+}
+
+.advantage {
+  //background: #328DF9;
+  background: #ffffff;
+  .advantage-body {
+    img {
+      max-width: 100%;
+    }
+  }
+  .business {
+    .items {
+        .des {
+          background: url(../images/bg_green.png) no-repeat 0 400px;
+          overflow: hidden;
+          display: inline-block;
+          strong {
+            display: block;
+            margin-top: 70px;
+            font-size: 16px;
+            font-weight: normal;
+            text-align: center;
+          }
+          u {
+            display: block;
+            position: absolute;
+            width: 156px;
+            height: 156px;
+            margin-left: 22px;
+            background: url(../images/words.png) no-repeat 0px -363px;
+            -webkit-transition: all .5s ease-in-out 0s;
+            -moz-transition: all .5s ease-in-out 0s;
+            -ms-transition: all .5s ease-in-out 0s;
+            -o-transition: all .5s ease-in-out 0s;
+            transition: all .5s ease-in-out 0s;
+          }
+          u.cl {
+            clip: rect(0px, 156px, -10px, 78px);
+          }
+          u.cr {
+            clip: rect(156px, 78px, 156px, 0px);
+          }
+          p {
+            position: relative;
+            top: 200px;
+            color: White;
+            font-family: Arial, "宋体";
+            font-size: 12px;
+            line-height: 20px;
+            text-align: center;
+          }
+        }
+        .des:hover {
+          background-position: 0 0;
+          -webkit-transition: all .5s ease-in-out .3s;
+          -moz-transition: all .5s ease-in-out .3s;
+          -ms-transition: all .5s ease-in-out .3s;
+          -o-transition: all .5s ease-in-out .3s;
+          transition: all .5s ease-in-out .3s;
+          u.cl {
+            clip: rect(0px, 156px, -10px, 78px);
+          }
+          u.cr {
+            clip: rect(156px, 78px, 156px, 0px);
+          }
+          strong {
+            color: White;
+            -webkit-transition-delay: .4s;
+            -moz-transition-delay: .4s;
+            -ms-transition-delay: .4s;
+            -o-transition-delay: .4s;
+            transition-delay: .4s;
+          }
+          p {
+            top: 20px;
+            -webkit-transition: all .3s ease-in-out .5s;
+            -moz-transition: all .3s ease-in-out .5s;
+            -ms-transition: all .3s ease-in-out .5s;
+            -o-transition: all .3s ease-in-out .5s;
+            transition: all .3s ease-in-out .5s;
+          }
+        }
+      }
+  }
+ .active .items .des u.cl {
+    clip: rect(0px, 156px, 156px, 78px);
+  }
+ .active  .items .des u.cr {
+    clip: rect(0px, 78px, 156px, 0px);
+  }
+}
