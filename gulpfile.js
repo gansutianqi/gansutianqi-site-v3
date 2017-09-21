@@ -3,10 +3,16 @@
  */
 
 var gulp = require('gulp');
-
+var fileinclude = require('gulp-file-include');
+var del = require('del');
+var plumber = require('gulp-plumber');
+var sass = require('gulp-sass');
+var autoprefixer = require('gulp-autoprefixer');
+var browserSync = require('browser-sync');
+var reload = browserSync.reload;
+var runSequence = require('run-sequence');
 
 /* 公共代码复用 */
-var fileinclude = require('gulp-file-include');
 gulp.task('fileinclude', function () {
     return gulp.src('src/**/*.html')
         .pipe(fileinclude({
@@ -21,15 +27,10 @@ gulp.task('copy:libs',function () {
         .pipe(gulp.dest('dist/libs'));
 });
 
-var del = require('del');
-
 gulp.task('clean',function () {
     return del('dist');
 });
 
-var plumber = require('gulp-plumber');
-var sass = require('gulp-sass');
-var autoprefixer = require('gulp-autoprefixer');
 gulp.task('styles', function () {
     return gulp.src('src/styles/**/*.scss')
         .pipe(plumber())
@@ -45,8 +46,6 @@ gulp.task('styles', function () {
 });
 
 /* 时时更新*/
-var browserSync = require('browser-sync');
-var reload = browserSync.reload;
 gulp.task('serve', function() {
     browserSync({
         server: {
@@ -58,10 +57,6 @@ gulp.task('serve', function() {
     gulp.watch(['src/styles/**/*.scss'],['styles',browserSync.reload]);
 });
 
-
-var runSequence = require('run-sequence');
-
-
 gulp.task('default', function () {
     runSequence('clean',
         'copy:libs',
@@ -69,9 +64,3 @@ gulp.task('default', function () {
         'styles',
         'serve');
 });
-
-
-
-
-
-
