@@ -23,8 +23,8 @@ gulp.task('fileinclude', function () {
 });
 
 gulp.task('copy:src', function () {
-    return gulp.src('src/libs/**/*')
-        .pipe(gulp.dest('dist/libs'));
+    return gulp.src('src/**/*')
+        .pipe(gulp.dest('dist/'));
 });
 
 gulp.task('clean', function () {
