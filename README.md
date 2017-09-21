@@ -8,10 +8,11 @@ gansutianqi official site,build on top of [october CMS](https://github.com/octob
 + run `php artisan october:env` generate a `.env` file for common config
 + make `storage` and `themes` directory writable.
 + before update october,you need run `composer update` first,then run `php artisan october:update`
-+ remove some files `rm .gitattributes README.md`
++ remove some files `rm .gitattributes .editorconfig README.md`
 + install dependence plugins
     + install october.dirvers `php artisan plugin:install October.Drivers`
     + install rainlab.user `php artisan plugin:install RainLab.User`
+    + nstall rainlab.pages `php artisan plugin:install RainLab.Pages`
 + clone this repository
     + in the project root directory run `git init`
     + `git remote add origin https://github.com/gansutianqi/gansutianqi-site-v3.git`
