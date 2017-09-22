@@ -1,4 +1,13 @@
+.article-nav {
+  @media (min-width: 992px) {
+    #mainNav.navbar-shrink {
+      background-color: rgba(60, 147, 249, 0.86);
+    }
+  }
+}
+
 .article {
+
   .article-left {
     //box-shadow: 1px 1px 4px 1px #d7d7d7;
     // background: #ffffff;
@@ -52,6 +61,7 @@
             }
             p {
               color: #555;
+              text-align: left;
             }
             .time {
               color: #888;
