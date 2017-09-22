@@ -1,4 +1,14 @@
+.article-nav {
+  @media (min-width: 992px) {
+    #mainNav.navbar-shrink {
+      background-color: rgba(60, 147, 249, 0.86);
+      //background: rgba(0, 0, 0, 0.85);
+    }
+  }
+}
+
 .article {
+
   .article-left {
     //box-shadow: 1px 1px 4px 1px #d7d7d7;
     // background: #ffffff;
@@ -8,6 +18,7 @@
           text-align: center;
           a {
             width: 60px;
+            font-size: 18px;
             color: #1d2124;
             text-decoration: none;
             border: none;
@@ -27,45 +38,57 @@
         border-bottom: 1px solid #ff4400;
 
       }
-
       .tab-content {
-        .media {
+        .article-list {
+          .media-article-list:last-child {
+            border-bottom: 0;
+          }
+          .media {
 
-        }
-
-        .media-article-list {
-          border-bottom: 1px solid #ddd;
-          padding: 15px 0;
-          .media-left {
-            padding-right: 25px;
-            > img {
-              width: 150px;
-              height: 115px;
-              //border:1px solid red;
+          }
+          .media-article-list {
+            border-bottom: 1px solid #ddd;
+            padding: 15px 0;
+            .media-left {
+              padding-right: 25px;
+              > img {
+                width: 150px;
+                height: 115px;
+                //border:1px solid red;
+              }
+            }
+            .media-body {
+              height: 120px;
+              overflow: hidden;
+              .media-heading {
+                font-size: 1.2em;
+                font-weight: bold;
+                color: #333;
+              }
+              p {
+                color: #555;
+                text-align: left;
+                margin-bottom: 0;
+              }
+              p:last-child {
+                margin-top: 10px;
+                font-size: 14px;
+                text-indent: 2em;
+              }
+              .time {
+                color: #888;
+              }
+              .keywords {
+                color: #888;
+                padding: 0 15px;
+              }
             }
           }
-          .media-body {
-            .media-heading {
-              font-size: 1.2em;
-              font-weight: bold;
-              color: #333;
-            }
-            p {
-              color: #555;
-            }
-            .time {
-              color: #888;
-            }
-            .keywords {
-              color: #888;
-              padding: 0 15px;
-            }
-          }
-        }
 
-        @media (max-width: 480px) {
-          .hidden-xxs {
-            display: none !important;
+          @media (max-width: 480px) {
+            .hidden-xxs {
+              display: none !important;
+            }
           }
         }
 
@@ -90,6 +113,7 @@
           color: #ff4400;
         }
       }
+
     }
   }
 }
