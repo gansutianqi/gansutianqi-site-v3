@@ -1,0 +1,136 @@
+.farm-nav {
+  .navbar-nav .nav-item .nav-link {
+    color: #2bb503 !important;
+  }
+  .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
+    color: #fe6441 !important;
+  }
+}
+
+#problem {
+  .problem-heading {
+
+  }
+  .problem-body {
+
+    .hovereffect {
+      width: 100%;
+      height: 100%;
+      float: left;
+      overflow: hidden;
+      position: relative;
+      text-align: center;
+      cursor: default;
+      .overlay {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        opacity: 0;
+        filter: alpha(opacity=0);
+        -webkit-transform: translate(460px, -100px) rotate(180deg);
+        -ms-transform: translate(460px, -100px) rotate(180deg);
+        transform: translate(460px, -100px) rotate(180deg);
+        -webkit-transition: all 0.4s 0.4s ease-in-out;
+        transition: all 0.4s 0.4s ease-in-out;
+        h2 {
+          text-transform: uppercase;
+          color: #fff;
+          text-align: center;
+          position: relative;
+          font-size: 17px;
+          padding: 10px;
+          background: rgba(0, 0, 0, 0.6);
+        }
+        a.info {
+          display: inline-block;
+          color: #fff;
+          border: 1px solid #fff;
+          margin: 50px 0 0 0;
+          padding: 10px 50px;
+          overflow: hidden;
+
+          background-color: transparent;
+          -webkit-transform: translateY(-200px);
+          -ms-transform: translateY(-200px);
+          transform: translateY(-200px);
+          -webkit-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
+        }
+        @media (max-width: 480px) {
+          a.info {
+            margin: 30px 0 0 0;
+            padding: 12px 50px;
+            height: 90px;
+            word-break: break-all;
+            text-overflow: ellipsis;
+            display: -webkit-box; /** 将对象作为伸缩盒子模型显示 **/
+            -webkit-box-orient: vertical; /** 设置或检索伸缩盒对象的子元素的排列方式 **/
+            -webkit-line-clamp: 3; /** 显示的行数 **/
+            overflow: hidden; /** 隐藏超出的内容 **/
+          }
+        }
+        a.info:hover {
+          box-shadow: 0 0 5px #fff;
+        }
+      }
+      img {
+        display: block;
+        position: relative;
+        -webkit-transition: all 4s ease-in;
+        transition: all 4s ease-in;
+        max-width: 100%;
+      }
+
+    }
+    .hovereffect:hover .overlay {
+      opacity: 1;
+      filter: alpha(opacity=100);
+      -webkit-transition-delay: 0s;
+      transition-delay: 0s;
+      -webkit-transform: translate(0px, 0px);
+      -ms-transform: translate(0px, 0px);
+      transform: translate(0px, 0px);
+    }
+
+    .hovereffect:hover h2 {
+      -webkit-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+      transform: translateY(0px);
+      -webkit-transition-delay: 0.5s;
+      transition-delay: 0.5s;
+    }
+
+    .hovereffect:hover a.info {
+      -webkit-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+      transform: translateY(0px);
+      -webkit-transition-delay: 0.3s;
+      transition-delay: 0.3s;
+    }
+
+  }
+
+}
+
+#shangji {
+  background: #00a65a;
+  // background: -webkit-linear-gradient(to right, #ff512f, #dd2476);
+  background: linear-gradient(to right, #00da76, #008146, #00da76);
+  color: white;
+  .shangji-body {
+    .img-responsive {
+      max-width: 100%
+    }
+  }
+}
+
+#solutions-farm{
+  padding: 100px 0;
+}
+
+
+
