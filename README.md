@@ -5,6 +5,7 @@
 #### YANJF123
 + article.html （行业动态）
 + article-content.html
-+ index-tpdp.html  (淘宝店铺装修)
++ index-farm.html (农村电子商务)
+~~+ index-tpdp.html  (淘宝店铺装修)~~
 
 
