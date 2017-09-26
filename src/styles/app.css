@@ -340,3 +340,10 @@ body {
 
 #solutions-farm {
   padding: 100px 0; }
+  #solutions-farm img {
+    max-width: 100%; }
+
+#solutions-dsyy {
+  padding: 100px 0; }
+  #solutions-dsyy img {
+    max-width: 100%; }
