@@ -109,7 +109,7 @@ body {
     #mainNav.navbar-shrink {
       padding-top: 0;
       padding-bottom: 0;
-      background-color: #000; }
+      background-color: rgba(0,0,0,0.8); }
       #mainNav.navbar-shrink .navbar-brand {
         font-size: 1.25em;
         padding: 12px 0; } }
@@ -583,7 +583,7 @@ ul.social-buttons {
     font-size: 20px;
     text-align: center;
     color: #fff;
-    background: #222;
+    background: rgba(0,0,0,0.6);
 }
 
 #gotoTop:after {
@@ -597,7 +597,7 @@ ul.social-buttons {
 
 #gotoTop.hover{
     color: #fff;
-    background: #fe6441;
+    background: rgba(254,100,65,0.8);
     transition: all 0.3s ease-in-out;
 }
 
@@ -628,6 +628,13 @@ ul.social-buttons {
 }
 .gstq-Title h2{
   color: #555;
+}
+.gstq-Title-xxh h5{
+  color: #555;
+}
+.gstq-Title-xxh p{
+  font-size: 1em;
+  color: #999;
 }
 .info-box {
   display: block;
@@ -710,7 +717,9 @@ ul.social-buttons {
 
 .color-white {
   color: #fff !important; }
-
+.padding-top-15 {
+  padding-top: 15px !important;
+}
 .padding-top-30 {
   padding-top: 30px !important; }
 
@@ -723,7 +732,7 @@ ul.social-buttons {
 .margin-top-30 {
   margin-top: 30px !important; }
 
-.margin-bottom {
+.margin-bottom-30 {
   margin-bottom: 30px !important; }
 .data-item .features .data{
   width: 130px;
@@ -749,6 +758,12 @@ ul.social-buttons {
   font-size: 16px;
   color: #777;
   line-height: 2; }
+.h__img_4__text {
+  font-size: 16px;
+  color: #777;
+  line-height: 2;
+  text-indent: 2em;
+}
 .function{
   display: block;
   padding: 4px;
@@ -778,3 +793,63 @@ ul.social-buttons {
   border: 1px solid #fff; }
 .btn-gstq-v1:hover {
   background: transparent; }
+/*Headline Center*/
+.headline-center {
+  text-align: center;
+  position: relative;
+}
+
+.headline-center h2 {
+  color: #555;
+  font-size: 24px;
+  position: relative;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+}
+
+.headline-center h2:after {
+  left: 50%;
+  z-index: 1;
+  width: 30px;
+  height: 2px;
+  content: " ";
+  bottom: -5px;
+  margin-left: -15px;
+  text-align: center;
+  position: absolute;
+  background: #72c02c;
+}
+
+.headline-center p {
+  color: #888;
+  font-size: 14px;
+  /*padding: 0 150px;*/
+}
+
+@media (max-width: 991px) {
+  .headline-center p {
+    padding: 0 50px;
+  }
+}
+
+.headline-center.headline-light h2 {
+  color: #fff;
+}
+
+.headline-center.headline-light p {
+  color: #eee;
+}
+
+/*Text Dropcap*/
+.dropcap {
+  float: left;
+  color: #fff;
+  padding: 7px 0;
+  min-width: 50px;
+  font-size: 35px;
+  font-weight: 200;
+  line-height: 35px;
+  text-align: center;
+  background: #555;
+  margin: 4px 10px 0 0;
+}
