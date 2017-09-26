@@ -6,11 +6,11 @@
 + 切换到frontend 分支上 `git checkout frontend`
 + 安装依赖 `npm install`或者`yarn`
 + 如果本地安装了`gulp-cli`
-    + 命令行输入`gulp`开始你的开发
-    + 如果构建,在命令行输入`gulp build` 生成dist目录给模板使用者
+    + 命令行输入`gulp`开始你的工作
+    + 如果构建, 命令行输入`gulp build` 生成dist目录给模板使用者
 + 如果你偏好使用NPM脚本
     + 命令行输入`npm run dev`开始你的工作
-    + 如果构建,在命令行输入`npm run build` 生成dist目录给模板使用者
+    + 如果构建, 命令行输入`npm run build` 生成dist目录给模板使用者
 
 #### zhang
 + index.html （首页）
