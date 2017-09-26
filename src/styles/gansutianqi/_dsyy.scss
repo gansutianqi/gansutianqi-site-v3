@@ -72,19 +72,29 @@
 }
 
 #serve-dsyy {
-/*  .serve-dsyy-body {
-    .fw-des {
-      padding: 15px 0;
-      font-size: 60px;
-    }
-    .fw-des:hover {
-      background: #ff4400;
-      color: #ffffff;
+  /*  .serve-dsyy-body {
+      .fw-des {
+        padding: 15px 0;
+        font-size: 60px;
+      }
+      .fw-des:hover {
+        background: #ff4400;
+        color: #ffffff;
 
-    }
-    i .fa {
+      }
+      i .fa {
 
-    }
+      }
 
-  }*/
+    }*/
+}
+
+#network-dsyy {
+  .network-des {
+    ul, ol li {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+  }
 }
