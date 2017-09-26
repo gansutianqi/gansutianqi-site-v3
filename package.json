@@ -4,7 +4,8 @@
   "description": "gansutianqi official site,build on top of [october CMS](https://github.com/octobercms/october).",
   "main": "index.js",
   "scripts": {
-    "gulp": "gulp"
+    "dev": "gulp",
+    "build": "gulp build"
   },
   "repository": {
     "type": "git",
