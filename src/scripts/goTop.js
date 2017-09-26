@@ -7,7 +7,7 @@ function gotoTop(min_height){
         function(){$(this).addClass("hover");},
         function(){$(this).removeClass("hover");
         });
-    min_height ? min_height = min_height : min_height = 400;
+    min_height ? min_height = min_height : min_height = 300;
     $(window).scroll(function(){
         var s = $(window).scrollTop();
         if( s > min_height){
