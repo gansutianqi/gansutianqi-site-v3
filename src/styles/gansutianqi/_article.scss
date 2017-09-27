@@ -7,6 +7,16 @@
   }
 }
 
+.arti-cont-nav {
+ // background: #0f0f0f !important;
+  //color: #0f0f0f;
+  .nav-item .nav-link {
+    color: #007bff !important;
+  }
+  padding-bottom: 0 !important;
+  padding-top: 10px !important;
+}
+
 .masthead-v1 {
   background: url("../../images/article/a.jpg");
 }
@@ -124,7 +134,7 @@
 
 //内容
 .article-content {
-
+margin-top: 90px!important;
   .article-body {
     box-shadow: 1px 1px 4px 1px #d7d7d7;
     padding: 25px;
