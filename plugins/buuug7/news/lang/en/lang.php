@@ -5,11 +5,6 @@ return [
         'name' => 'News',
         'description' => 'News Plugin',
     ],
-    'common' => [
-        'slug' => 'Slug',
-        'created_at' => 'Created at',
-        'updated_at' => 'Updated at',
-    ],
     'news' => [
         'posts' => 'Posts',
         'categories' => 'Categories',
@@ -30,6 +25,8 @@ return [
         'published_at' => 'Published at',
         'post_component_name' => 'Post',
         'post_component_description' => 'Display a news post on the page.',
+        'slug' => 'Slug',
+        'slug_description' => 'look up the news post using the supplied slug value.',
     ],
     'posts' => [
         

@@ -79,4 +79,20 @@ class Post extends Model
             ->whereNotNull('published_at')
             ->where('published_at', '<', Carbon::now());
     }
+
+    public function nextPost()
+    {
+        return self::isPublished()
+            ->where('id', '>', $this->id)
+            ->orderBy('id', 'asc')
+            ->first();
+    }
+
+    public function previousPost()
+    {
+        return self::isPublished()
+            ->where('id', '<', $this->id)
+            ->orderBy('id', 'desc')
+            ->first();
+    }
 }

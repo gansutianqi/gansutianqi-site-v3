@@ -7,7 +7,7 @@ fields:
         label: buuug7.news::lang.post.title
         span: left
     slug:
-        label: buuug7.news::lang.common.slug
+        label: buuug7.news::lang.post.slug
         preset: title
         span: right
 tabs:
