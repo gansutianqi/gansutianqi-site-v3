@@ -3,9 +3,7 @@ gansutianqi official site,build on top of [october CMS](https://github.com/octob
 
 ## install
 + install october CMS via composer `composer create-project october/october PROJECT_NAME`
-+ setting `'disableCoreUpdates' => true` in `config/cms.php`
 + `php artisan october:install`
-+ run `php artisan october:env` generate a `.env` file for common config
 + make `storage` and `themes` directory writable.
 + before update october,you need run `composer update` first,then run `php artisan october:update`
 + remove some files `rm .gitattributes .editorconfig README.md`
