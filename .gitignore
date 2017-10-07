@@ -23,12 +23,15 @@ nbproject
 /node_modules
 /bootstrap
 /config
+!/config/dev
+!/config/production
 /modules
 /plugins/october
 /plugins/rainlab
 /storage
 /tests
 /themes/demo
+.gitattributes
 .htaccess
 .travis.yml
 /artisan
