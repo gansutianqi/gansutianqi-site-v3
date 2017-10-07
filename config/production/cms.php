@@ -10,4 +10,6 @@ return [
 
     'disableCoreUpdates' => true,
 
+    // more added
+
 ];
