@@ -39,9 +39,6 @@ class Post extends ComponentBase
         return $post;
     }
 
-    public function getA(){
-        return 'A';
-    }
 
 
 }
