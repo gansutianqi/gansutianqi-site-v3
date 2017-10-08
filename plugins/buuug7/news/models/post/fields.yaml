@@ -23,6 +23,10 @@ tabs:
             tab: buuug7.news::lang.post.categories
             type: relation
             span: auto
+        featured_image:
+            tab: buuug7.news::lang.post.featured_image
+            type: mediafinder
+            mode: image
         files:
             tab: buuug7.news::lang.post.files
             type: repeater
@@ -38,10 +42,6 @@ tabs:
                         span: auto
 secondaryTabs:
     fields:
-        image:
-            label: buuug7.news::lang.post.image
-            type: mediafinder
-            mode: image
         published:
             label: buuug7.news::lang.post.published
             type: checkbox
@@ -58,8 +58,3 @@ secondaryTabs:
             label: buuug7.news::lang.post.featured
             type: checkbox
             span: auto
-
-
-
-
-

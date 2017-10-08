@@ -95,4 +95,63 @@ class Post extends Model
             ->orderBy('id', 'desc')
             ->first();
     }
+
+    public function scopeListFrontend($query, $options)
+    {
+        extract(array_merge([
+            'page' => 1,
+            'postsPerPage' => 30,
+            'category' => null,
+            'search' => '',
+            'published' => true,
+        ], $options));
+
+        if ($published) {
+            $query->isPublished();
+        }
+
+        /*
+         * search
+         * */
+        $search = trim($search);
+        if (strlen($search)) {
+            $query->searchWhere($search, [
+                'title',
+                'slug',
+                'content'
+            ]);
+        }
+
+        /*
+         * category
+         * */
+        if ($category !== null) {
+            $category = Category::find($category);
+
+            $categories = $category->getAllChildrenAndSelf()->lists('id');
+            //dd($categories);
+            $query->whereHas('categories', function ($q) use ($categories) {
+                $q->whereIn('id', $categories);
+            });
+        } else {
+            return null;
+        }
+        return $query->paginate($postsPerPage, $page);
+    }
+
+    public function setUrl($pageName, $controller)
+    {
+        $params = [
+            'id' => $this->id,
+            'slug' => $this->slug,
+        ];
+
+        if (array_key_exists('categories', $this->getRelations())) {
+            $params['category'] = $this->categories->count() ? $this->categories->first()->slug : null;
+        }
+
+        return $this->url = $controller->pageUrl($pageName,$params);
+    }
+
+
 }

@@ -27,6 +27,7 @@ return [
         'post_component_description' => 'Display a news post on the page.',
         'slug' => 'Slug',
         'slug_description' => 'look up the news post using the supplied slug value.',
+        'featured_image' => 'Featured image',
     ],
     'posts' => [
         

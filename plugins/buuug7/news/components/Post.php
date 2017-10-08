@@ -2,6 +2,7 @@
 
 use Cms\Classes\ComponentBase;
 use Buuug7\News\Models\Post as PostModel;
+use Illuminate\Support\Facades\Response;
 
 class Post extends ComponentBase
 {
@@ -38,7 +39,4 @@ class Post extends ComponentBase
         $post = PostModel::where('slug', $slug)->isPublished()->first();
         return $post;
     }
-
-
-
 }

@@ -52,6 +52,7 @@ class Plugin extends PluginBase
     {
         return [
             'Buuug7\News\Components\Post' => 'newsPost',
+            'Buuug7\News\Components\Posts' => 'newsPosts',
         ];
     }
 
