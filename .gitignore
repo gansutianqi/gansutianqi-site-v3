@@ -20,7 +20,6 @@ composer.lock
 nbproject
 
 # new add
-/node_modules
 /bootstrap
 /config
 !/config/dev
@@ -42,3 +41,6 @@ nbproject
 /ISSUE_TEMPLATE.md
 /phpunit.xml
 /server.php
+
+/dist
+/node_modules
