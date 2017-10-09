@@ -75,4 +75,12 @@ class Category extends Model
     {
         return $this->posts()->count();
     }
+
+    public function setUrl($pageName,$controller){
+        $params = [
+            'id' => $this->id,
+            'category' => $this->slug,
+        ];
+        return $this->url = $controller->pageUrl($pageName,$params);
+    }
 }

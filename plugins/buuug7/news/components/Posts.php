@@ -3,12 +3,14 @@
 use Cms\Classes\ComponentBase;
 use Buuug7\News\Models\Post as PostModel;
 use Buuug7\News\Models\Category as CategoryModel;
+use Illuminate\Support\Facades\Redirect;
 
 class Posts extends ComponentBase
 {
     public $posts;
     public $category;
     public $postPage;
+    public $categoryPage;
 
     public function componentDetails()
     {
@@ -22,8 +24,8 @@ class Posts extends ComponentBase
     {
         return [
             'page' => [
-                'title' => 'buuug7.news::lang.posts.pageNumber',
-                'description' => 'buuug7.news::lang.posts.page_number_description',
+                'title' => 'buuug7.news::lang.posts.page',
+                'description' => 'buuug7.news::lang.posts.page_description',
                 'type' => 'string',
                 'default' => '{{ :page }}',
             ],
@@ -46,15 +48,32 @@ class Posts extends ComponentBase
                 'type' => 'string',
                 'default' => 'news/post',
             ],
+            'categoryPage' => [
+                'title' => 'buuug7.news::lang.posts.category_page',
+                'description' => 'buuug7.news::lang.posts.category_page_descrption',
+                'type' => 'string',
+                'default' => 'news/posts',
+            ],
         ];
     }
 
     public function onRun()
     {
         $this->postPage=$this->page['postPage']=$this->property('postPage');
+        $this->categoryPage = $this->page['categoryPage'] = $this->property('categoryPage');
 
         $this->category = $this->page['category'] = $this->loadCategory();
         $this->posts = $this->page['posts'] =  $this->listPosts();
+
+        /*
+         * If the page number is not valid,redirect
+         * */
+        $currentPage = input('page');
+        $lastPage = $this->posts->lastPage();
+        if($currentPage > $lastPage && $currentPage >1){
+            //dd($currentPage);
+            return Redirect::to($this->currentPageUrl().'?page='.$lastPage);
+        }
 
     }
 
@@ -62,7 +81,7 @@ class Posts extends ComponentBase
     {
         $category = $this->category ? $this->category->id : null;
 
-        $posts = PostModel::listFrontend([
+        $posts = PostModel::with('categories')->listFrontend([
             'page' => $this->property('page'),
             'postsPerPage' => $this->property('postsPerPage'),
             'category' => $category,
@@ -72,9 +91,10 @@ class Posts extends ComponentBase
 
         $posts->each(function($post){
             $post->setUrl($this->postPage,$this->controller);
-
+            $post->categories->each(function ($category){
+                $category->setUrl($this->categoryPage,$this->controller);
+            });
         });
-
         return $posts;
     }
 
