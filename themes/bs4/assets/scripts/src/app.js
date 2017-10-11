@@ -9,7 +9,7 @@
 */
 
 // add style
-// only watch extract
+// extract by webpack to assets/styles/css folder
 import styles from '../../styles/scss/app.scss';
 
 import navbarScroll from './navbar-scroll.js'
