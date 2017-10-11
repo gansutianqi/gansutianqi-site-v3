@@ -14,7 +14,10 @@
 
 #### zhang
 + index.html （首页）
-+ index_o2o_z.html  （O2O）
++ index_o2o.html  （O2O）
++ index_tbdp.html （店铺装修）
++ index_xxh.html （企业信息化）
++ index_yxyl.html （游戏娱乐）
 
 #### YANJF123
 + article.html （行业动态）
