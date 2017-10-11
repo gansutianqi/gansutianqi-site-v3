@@ -3,3 +3,13 @@ description: 'build on top of bootstrap v4'
 author: buuug7
 homepage: 'https://github.com/buuug7'
 code: bs4
+form:
+    fields:
+        site_name:
+            label: Site name
+            comment: 甘肃天奇网路科技有限公司
+            default: 天奇网络
+        keywords:
+            label: Keywords
+            comment: 关键字
+            default: 天奇网,甘肃天气,甘肃天气网路科技有限公司

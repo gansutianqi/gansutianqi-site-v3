@@ -1,0 +1,48 @@
+/*
+|--------------------------------------------------------------------------
+| app
+|--------------------------------------------------------------------------
+|
+| Created by puguohong on 09/10/2017.
+| 
+|
+*/
+/*
+ * variables
+ **/
+/*
+ * utils
+ **/
+.box-shadow {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); }
+
+.mt-huge {
+  margin-top: 90px; }
+
+/*
+ * navbar
+ **/
+.navbar-tq {
+  background-color: white;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #f7f7f7; }
+  .navbar-tq .navbar-toggler {
+    border-color: #fe6441; }
+    .navbar-tq .navbar-toggler:focus, .navbar-tq .navbar-toggler:hover {
+      outline: none;
+      cursor: pointer; }
+  .navbar-tq .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23fe6441' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
+  .navbar-tq .navbar-nav .nav-link {
+    color: rgba(0, 0, 0, 0.6); }
+    .navbar-tq .navbar-nav .nav-link:hover, .navbar-tq .navbar-nav .nav-link:focus {
+      color: #fe6441; }
+    .navbar-tq .navbar-nav .nav-link.disabled {
+      color: rgba(0, 0, 0, 0.3) !important; }
+  .navbar-tq .navbar-nav .show > .nav-link,
+  .navbar-tq .navbar-nav .active > .nav-link,
+  .navbar-tq .navbar-nav .nav-link.show,
+  .navbar-tq .navbar-nav .nav-link.active {
+    color: #fe6441; }
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiIuLi9zdHlsZXMvY3NzL2FwcC5jc3MiLCJzb3VyY2VSb290IjoiIn0=*/

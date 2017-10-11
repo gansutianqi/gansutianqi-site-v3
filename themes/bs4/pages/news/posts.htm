@@ -1,0 +1,10 @@
+title = 'news list'
+url = '/news/posts/:category/:page?'
+layout = 'default'
+[newsPosts]
+postsPerPage = 2
+==
+
+<div class="container m-t">
+    {% component 'newsPosts' %}
+</div>

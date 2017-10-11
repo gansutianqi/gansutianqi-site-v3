@@ -8,4 +8,12 @@
  |
 */
 
-require('./bootstrap');
+// add style
+// only watch extract
+import styles from '../../styles/scss/app.scss';
+
+import navbarScroll from './navbar-scroll.js'
+
+$(function($) {
+    navbarScroll();
+});
