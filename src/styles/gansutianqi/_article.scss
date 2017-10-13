@@ -42,6 +42,9 @@
 
       }
       .tab-content {
+        .tab-pane{
+          background: none!important;
+        }
         .article-list {
           .media-article-list:last-child {
             border-bottom: 0;
@@ -87,7 +90,6 @@
               }
             }
           }
-
           @media (max-width: 480px) {
             .hidden-xxs {
               display: none !important;
