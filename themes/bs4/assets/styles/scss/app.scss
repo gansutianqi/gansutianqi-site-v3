@@ -8,12 +8,19 @@
 | 
 |
 */
-
 // @import "~bootstrap/scss/bootstrap.scss";
-
 @import "functions";
 @import "variables";
-
 @import "utils";
 @import "navbar";
 @import "banner";
+
+.slick-carousel-partner {
+    a{
+        text-align: center;
+    }
+    a img {
+        width:180px;
+        display: inline-block;
+    }
+}

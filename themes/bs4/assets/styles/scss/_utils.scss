@@ -9,8 +9,13 @@
 }
 
 .bg-white{
-    background-color: #fff !important;
+    background-color: rgba(255,255,255,1) !important;
 }
+
+.bg-f7f7f7{
+    background-color: #f7f7f7 !important;
+}
+
 
 .height-100vh{
     height: 100vh;
@@ -34,5 +39,13 @@
     }
     &:after{
         background-color: rgba(0,0,0,0.5) !important;
+    }
+}
+
+.card--no-border{
+    border: none !important;
+    border-radius: 0 !important;
+    img.card-img-top{
+        border-radius: 0 !important;
     }
 }

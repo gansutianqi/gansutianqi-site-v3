@@ -12,17 +12,12 @@
 // extract by webpack to assets/styles/css folder
 import styles from '../../styles/scss/app.scss';
 
-import navbarScroll from './navbar-scroll.js'
+import navbarScroll from './navbar-scroll.js';
+import slideCarouselBanner1 from './slick-carousel-banner-1';
+import slideCarouselPartner from './slick-carousel-partner';
 
 $(function($) {
     navbarScroll();
-
-    $('.slick-carousel-banner-1').slick({
-        dots: true,
-        slidesToShow:1,
-        slidesToScroll:1,
-        infinite: true,
-        arrows:false,
-        fade:true
-    });
+    slideCarouselBanner1();
+    slideCarouselPartner();
 });
