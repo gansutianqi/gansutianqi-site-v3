@@ -16,16 +16,36 @@
 .box-shadow {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); }
 
-.mt-huge {
-  margin-top: 90px; }
+.bg-white {
+  background-color: #fff !important; }
+
+.height-100vh {
+  height: 100vh; }
+
+.bg-img-hero {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.bg-overlay {
+  position: relative; }
+  .bg-overlay:before, .bg-overlay:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; }
+  .bg-overlay:after {
+    background-color: rgba(0, 0, 0, 0.5) !important; }
 
 /*
  * navbar
  **/
 .navbar-tq {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0);
   font-size: 1.2rem;
-  border-bottom: 1px solid #f7f7f7; }
+  transition: all 0.5s ease 0s; }
   .navbar-tq .navbar-toggler {
     border-color: #fe6441; }
     .navbar-tq .navbar-toggler:focus, .navbar-tq .navbar-toggler:hover {
@@ -34,7 +54,7 @@
   .navbar-tq .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23fe6441' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
   .navbar-tq .navbar-nav .nav-link {
-    color: rgba(0, 0, 0, 0.6); }
+    color: white; }
     .navbar-tq .navbar-nav .nav-link:hover, .navbar-tq .navbar-nav .nav-link:focus {
       color: #fe6441; }
     .navbar-tq .navbar-nav .nav-link.disabled {
@@ -44,5 +64,36 @@
   .navbar-tq .navbar-nav .nav-link.show,
   .navbar-tq .navbar-nav .nav-link.active {
     color: #fe6441; }
+
+.slick-carousel-banner-1 .slick-carousel-banner-1-inner {
+  position: relative;
+  z-index: 3;
+  min-height: 600px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: row; }
+
+.slick-carousel-banner-1 .slick-carousel-banner-1-title {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 3rem; }
+
+.slick-carousel-banner-1 .slick-carousel-banner-1-buttons {
+  margin-bottom: 3rem; }
+
+.slick-carousel-banner-1 .slick-carousel-banner-1-description {
+  max-width: 900px;
+  margin-top: 3rem;
+  color: rgba(255, 255, 255, 0.8); }
+
+.slick-carousel-banner-1 .slick-dots {
+  bottom: 25px !important; }
+  .slick-carousel-banner-1 .slick-dots li button:before {
+    color: #fff !important;
+    font-size: 14px !important; }
+
+.nav-link-black {
+  color: rgba(0, 0, 0, 0.6) !important; }
 
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiIuLi9zdHlsZXMvY3NzL2FwcC5jc3MiLCJzb3VyY2VSb290IjoiIn0=*/

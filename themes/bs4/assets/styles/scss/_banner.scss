@@ -1,0 +1,35 @@
+.slick-carousel-banner-1{
+    .slick-carousel-banner-1-inner{
+        position: relative;
+        z-index: 3;
+        min-height: 600px;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+    .slick-carousel-banner-1-title{
+        font-size: 2.5rem;
+        color:#fff;
+        margin-bottom: 3rem;
+    }
+    .slick-carousel-banner-1-buttons{
+        margin-bottom: 3rem;
+    }
+    .slick-carousel-banner-1-description{
+        max-width: 900px;
+        margin-top:3rem;
+        color:rgba(255,255,255,0.8);
+    }
+    .slick-dots{
+        bottom: 25px !important;
+        li button:before{
+            color:#fff !important;
+            font-size: 14px !important;
+        }
+    }
+}
+
+.nav-link-black{
+    color:rgba(0,0,0,0.6) !important;
+}

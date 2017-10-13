@@ -16,4 +16,13 @@ import navbarScroll from './navbar-scroll.js'
 
 $(function($) {
     navbarScroll();
+
+    $('.slick-carousel-banner-1').slick({
+        dots: true,
+        slidesToShow:1,
+        slidesToScroll:1,
+        infinite: true,
+        arrows:false,
+        fade:true
+    });
 });
