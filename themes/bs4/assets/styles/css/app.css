@@ -48,6 +48,13 @@
   .card--no-border img.card-img-top {
     border-radius: 0 !important; }
 
+.slick-carousel-partner a {
+  text-align: center; }
+
+.slick-carousel-partner a img {
+  width: 180px;
+  display: inline-block; }
+
 /*
  * navbar
  **/
@@ -85,14 +92,14 @@
 .slick-carousel-banner-1 .slick-carousel-banner-1-title {
   font-size: 2.5rem;
   color: #fff;
-  margin-bottom: 3rem; }
+  margin-bottom: 2rem; }
 
 .slick-carousel-banner-1 .slick-carousel-banner-1-buttons {
-  margin-bottom: 3rem; }
+  margin-bottom: 2rem; }
 
 .slick-carousel-banner-1 .slick-carousel-banner-1-description {
   max-width: 900px;
-  margin-top: 3rem;
+  margin-top: 2rem;
   color: rgba(255, 255, 255, 0.8); }
 
 .slick-carousel-banner-1 .slick-dots {
@@ -104,11 +111,38 @@
 .nav-link-black {
   color: rgba(0, 0, 0, 0.6) !important; }
 
-.slick-carousel-partner a {
-  text-align: center; }
+.tq-footer {
+  padding: 3rem 0 0 0;
+  background-color: rgba(0, 0, 0, 0.9); }
+  .tq-footer .tq-footer__logo {
+    width: 250px; }
+  .tq-footer .tq-footer__social-link {
+    margin-top: 1rem;
+    text-align: center; }
+    .tq-footer .tq-footer__social-link .list-inline-item {
+      margin: 0 8px; }
+    .tq-footer .tq-footer__social-link .list-inline-item > a {
+      font-size: 1.5rem;
+      color: rgba(255, 255, 255, 0.8); }
+  .tq-footer .tq-footer__block {
+    margin-bottom: 2rem; }
+    .tq-footer .tq-footer__block li {
+      text-align: center; }
+    .tq-footer .tq-footer__block li a {
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 0.9rem; }
+  .tq-footer .tq-footer__block-title {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: rgba(255, 255, 255, 0.9); }
+  .tq-footer .tq-footer__copy-right {
+    padding: 1rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.2); }
+  .tq-footer .tq-footer__author {
+    color: rgba(255, 255, 255, 0.8); }
 
-.slick-carousel-partner a img {
-  width: 180px;
-  display: inline-block; }
+.divider-v1 {
+  border-top: 1px solid rgba(255, 255, 255, 0.2); }
 
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiIuLi9zdHlsZXMvY3NzL2FwcC5jc3MiLCJzb3VyY2VSb290IjoiIn0=*/
