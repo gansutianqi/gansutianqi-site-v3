@@ -30,6 +30,12 @@
     }
 }
 
+@media (max-width: 576px) {
+    .d-hidden-sm{
+        display: none !important;
+    }
+}
+
 .nav-link-black{
     color:rgba(0,0,0,0.6) !important;
 }
