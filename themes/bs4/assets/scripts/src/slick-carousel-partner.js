@@ -2,6 +2,7 @@ export default function slickCarouselPartner() {
     $('.slick-carousel-partner').slick({
         dots: true,
         infinite: false,
+        arrows: false,
         speed: 300,
         slidesToShow: 5,
         slidesToScroll: 1,
