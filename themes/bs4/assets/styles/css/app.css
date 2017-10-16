@@ -111,38 +111,49 @@
 .nav-link-black {
   color: rgba(0, 0, 0, 0.6) !important; }
 
-.tq-footer {
+.tq-footer-v1 {
   padding: 3rem 0 0 0;
   background-color: rgba(0, 0, 0, 0.9); }
-  .tq-footer .tq-footer__logo {
+  .tq-footer-v1 .tq-footer-v1__logo {
     width: 250px; }
-  .tq-footer .tq-footer__social-link {
+  .tq-footer-v1 .tq-footer-v1__social-link {
     margin-top: 1rem;
     text-align: center; }
-    .tq-footer .tq-footer__social-link .list-inline-item {
+    .tq-footer-v1 .tq-footer-v1__social-link .list-inline-item {
       margin: 0 8px; }
-    .tq-footer .tq-footer__social-link .list-inline-item > a {
+    .tq-footer-v1 .tq-footer-v1__social-link .list-inline-item > a {
       font-size: 1.2rem;
       color: rgba(255, 255, 255, 0.6); }
-  .tq-footer .tq-footer__block {
+  .tq-footer-v1 .tq-footer-v1__block {
     margin-bottom: 2rem; }
-    .tq-footer .tq-footer__block li {
+    .tq-footer-v1 .tq-footer-v1__block li {
       text-align: center; }
-    .tq-footer .tq-footer__block li a {
+    .tq-footer-v1 .tq-footer-v1__block li a {
       color: rgba(255, 255, 255, 0.8);
       font-size: 0.9rem; }
-  .tq-footer .tq-footer__block-title {
+  .tq-footer-v1 .tq-footer-v1__block-title {
     text-align: center;
     font-size: 1.5rem;
     margin-bottom: 2rem;
     color: rgba(255, 255, 255, 0.9); }
-  .tq-footer .tq-footer__copy-right {
+  .tq-footer-v1 .tq-footer-v1__copy-right {
     padding: 1rem 0;
     border-top: 1px solid rgba(255, 255, 255, 0.2); }
-  .tq-footer .tq-footer__author {
+  .tq-footer-v1 .tq-footer-v1__author {
     color: rgba(255, 255, 255, 0.8); }
 
-.divider-v1 {
-  border-top: 1px solid rgba(255, 255, 255, 0.2); }
+.tq-footer-v2 {
+  padding: 3em 0 0 0;
+  background-color: rgba(0, 0, 0, 0.9); }
+  .tq-footer-v2 .tq-footer-v2__block {
+    margin-bottom: 2rem; }
+  .tq-footer-v2 .tq-footer-v2__block-title {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: rgba(255, 255, 255, 0.9); }
+  .tq-footer-v2 .tq-footer-v2__copy-right {
+    padding: 1rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.9rem; }
 
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiIuLi9zdHlsZXMvY3NzL2FwcC5jc3MiLCJzb3VyY2VSb290IjoiIn0=*/
