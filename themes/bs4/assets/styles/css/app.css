@@ -147,13 +147,31 @@
   background-color: rgba(0, 0, 0, 0.9); }
   .tq-footer-v2 .tq-footer-v2__block {
     margin-bottom: 2rem; }
+    .tq-footer-v2 .tq-footer-v2__block ul > li > a {
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 0.9rem; }
+  .tq-footer-v2 .tq-footer-v2__block__description {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9rem; }
+  .tq-footer-v2 .tq-footer-v2__social-link li {
+    margin: 0 8px; }
+  .tq-footer-v2 .tq-footer-v2__social-link li:first-of-type {
+    margin-left: 0; }
+  .tq-footer-v2 .tq-footer-v2__social-link li > a {
+    font-size: 1.3rem !important; }
   .tq-footer-v2 .tq-footer-v2__block-title {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: normal;
     margin-bottom: 2rem;
     color: rgba(255, 255, 255, 0.9); }
   .tq-footer-v2 .tq-footer-v2__copy-right {
     padding: 1rem 0;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     font-size: 0.9rem; }
+    .tq-footer-v2 .tq-footer-v2__copy-right a {
+      color: rgba(255, 255, 255, 0.8); }
+
+body {
+  font-family: "Hiragino Sans GB", "Microsoft YaHei", arial, Tahoma, SimSun, sans-serif; }
 
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiIuLi9zdHlsZXMvY3NzL2FwcC5jc3MiLCJzb3VyY2VSb290IjoiIn0=*/

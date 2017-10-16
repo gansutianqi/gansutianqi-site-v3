@@ -49,10 +49,30 @@
 
     .tq-footer-v2__block{
         margin-bottom: 2rem;
+        ul > li >a{
+            color:rgba(255,255,255,0.6);
+            font-size: 0.9rem;
+        }
+    }
+    .tq-footer-v2__block__description{
+        color:rgba(255,255,255,0.6);
+        font-size: 0.9rem;
+    }
+    .tq-footer-v2__social-link{
+        li{
+            margin:0 8px;
+        }
+        li:first-of-type{
+            margin-left: 0;
+        }
+        li > a{
+            font-size: 1.3rem !important;
+        }
     }
     .tq-footer-v2__block-title{
         //text-align: center;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
+        font-weight: normal;
         margin-bottom: 2rem;
         color:rgba(255,255,255,0.9)
     }
@@ -60,5 +80,8 @@
         padding: 1rem 0;
         border-top:1px solid rgba(255,255,255,0.1);
         font-size: 0.9rem;
+        a{
+            color:rgba(255,255,255,0.8);
+        }
     }
 }
