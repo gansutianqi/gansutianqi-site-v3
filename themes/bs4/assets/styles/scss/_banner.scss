@@ -17,8 +17,8 @@
     }
     .slick-carousel-banner-1-description{
         max-width: 900px;
-        margin-top:1rem;
-        color:rgba(255,255,255,0.8);
+        margin-top:3rem;
+        color:rgba(255,255,255,0.7);
     }
     .slick-dots{
         bottom: 25px !important;
@@ -28,13 +28,6 @@
         }
     }
 }
-
-@media (max-width: 576px) {
-    .d-hidden-sm{
-        display: none !important;
-    }
-}
-
 .nav-link-black{
     color:rgba(0,0,0,0.6) !important;
 }
