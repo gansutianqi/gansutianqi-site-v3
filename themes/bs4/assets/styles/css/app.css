@@ -81,6 +81,9 @@
   .navbar-tq .navbar-nav .nav-link.active {
     color: #fe6441; }
 
+.nav-link-black {
+  color: rgba(0, 0, 0, 0.6) !important; }
+
 .slick-carousel-banner-1 .slick-carousel-banner-1-inner {
   position: relative;
   z-index: 3;
@@ -107,9 +110,6 @@
   .slick-carousel-banner-1 .slick-dots li button:before {
     color: #fff !important;
     font-size: 14px !important; }
-
-.nav-link-black {
-  color: rgba(0, 0, 0, 0.6) !important; }
 
 .tq-footer-v1 {
   padding: 3rem 0 0 0;
