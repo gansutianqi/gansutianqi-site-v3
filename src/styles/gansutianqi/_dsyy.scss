@@ -1,9 +1,21 @@
-.head-opacity{
-  opacity: 0.6;
-  background: #1f1d1d;
-  height: auto!important;
-   //position: absolute;
+.head-opacity {
+  height: auto !important;
+  background-image: url('../../images/dsyy/bannar.jpg');
+  z-index: 1;
+  position: relative;
 }
+
+.head-opacity:before {
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  content: "";
+  position: absolute;
+}
+
 .home-dsyy {
   padding: 100px 0;
   img {
@@ -96,7 +108,7 @@
         margin-top: 10px;
       }
     }
-    .fw-des:hover{
+    .fw-des:hover {
       background: #ff642c;
       color: #ffffff;
       transition: all 0.5s ease-in-out;
