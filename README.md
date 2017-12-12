@@ -18,4 +18,4 @@ gansutianqi official site,build on top of [october CMS](https://github.com/octob
 + after pull completed
     + install buuug7.news `php artisan plugin:refresh Buuug7.News`
 + run `php artisan october:env` generate a `.env` file for common configuration.    
-+ when develop in local,make sure to add APP_ENV=dev for use dev config.    
++ when develop in local,make sure to add `APP_ENV=dev` for use dev config.    
