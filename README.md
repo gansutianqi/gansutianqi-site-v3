@@ -4,7 +4,7 @@ gansutianqi official site,build on top of [october CMS](https://github.com/octob
 ## install
 + install october CMS via composer `composer create-project october/october PROJECT_NAME`
 + `php artisan october:install`
-+ make `storage` and `themes` directory writable.
++ make `storage` and `themes` directory writable `chmod -R 777 storage themes`.
 + before update october,you need run `composer update` first,then run `php artisan october:update`
 + remove some files `rm .gitattributes .editorconfig README.md`
 + install dependence plugins
