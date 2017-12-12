@@ -2,7 +2,7 @@
 
 return [
 
-    'activeTheme' => 'demo',
+    'activeTheme' => 'bs4',
 
     'edgeUpdates' => true,
 
