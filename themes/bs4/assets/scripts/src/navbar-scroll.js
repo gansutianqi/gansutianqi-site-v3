@@ -1,8 +1,14 @@
 export default function navbarScroll() {
+
+    let $navbar = $('#navbar-tq');
+
+    if (!$navbar.length) {
+        return;
+    }
+
     window.onscroll = function () {
-        let $navbar = $('#navbar-tq');
         let $navbarLink = $navbar.find('.nav-link');
-        if ($navbar.offset().top >= $navbar.height()*1.5) {
+        if ($navbar.offset().top >= $navbar.height() * 1.5) {
             $navbar.addClass('box-shadow bg-white');
             $navbarLink.addClass('nav-link-black');
         } else {
