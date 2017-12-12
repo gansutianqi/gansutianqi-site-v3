@@ -18,7 +18,7 @@
         {% if post.categories.count %}
         in
             {% for category in post.categories %}
-                 <a href="#">{{ category.name }}</a>
+                 <a href="/news/posts/{{ category.name}}">{{ category.name }}</a>
                 {% if not loop.last %},{% endif %}
             {% endfor %}
         {% endif %}
