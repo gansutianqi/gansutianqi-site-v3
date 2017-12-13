@@ -1,10 +1,20 @@
 export default function navbarScroll() {
 
-    let $navbar = $('#navbar-tq');
+    let $navbar = $('#navbar-scroll-tq');
 
     if (!$navbar.length) {
         return;
     }
+
+    $navbar.on('show.bs.collapse', function (e) {
+        $navbar.addClass('bg-white').find('.nav-link').addClass('nav-link-black');
+    });
+
+    $navbar.on('hide.bs.collapse', function (e) {
+        if ($navbar.offset().top <= $navbar.height() * 1.5) {
+            $navbar.removeClass('bg-white').find('.nav-link').removeClass('nav-link-black');
+        }
+    })
 
     window.onscroll = function () {
         let $navbarLink = $navbar.find('.nav-link');

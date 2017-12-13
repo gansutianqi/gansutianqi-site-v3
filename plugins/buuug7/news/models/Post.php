@@ -65,11 +65,15 @@ class Post extends Model
             'table' => 'buuug7_news_posts_categories',
         ],
     ];
+
+    public $attachMany = [
+        'featured_images' => ['System\Models\File', 'order' => 'sort_order'],
+    ];
+
     public $morphTo = [];
     public $morphOne = [];
     public $morphMany = [];
     public $attachOne = [];
-    public $attachMany = [];
 
     public function scopeIsPublished($query)
     {
@@ -133,9 +137,8 @@ class Post extends Model
             $query->whereHas('categories', function ($q) use ($categories) {
                 $q->whereIn('id', $categories);
             });
-        } else {
-            return null;
         }
+
         return $query->paginate($postsPerPage, $page);
     }
 

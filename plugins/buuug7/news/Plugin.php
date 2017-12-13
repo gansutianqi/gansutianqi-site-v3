@@ -99,7 +99,7 @@ class Plugin extends PluginBase
                 'permissions' => ['buuug7.news.*'],
                 'sideMenu' => [
                     'new_post' => [
-                        'label' => 'buuug7.news::lang.post.new_post',
+                        'label' => 'buuug7.news::lang.posts.new_post',
                         'icon' => 'icon-plus',
                         'url' => Backend::url('buuug7/news/posts/create'),
                         'permissions' => ['buuug7.news.access_posts'],

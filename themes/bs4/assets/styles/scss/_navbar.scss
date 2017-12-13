@@ -2,13 +2,13 @@
  * navbar
  **/
 
-.navbar-tq {
+.navbar-tq-v1 {
     background-color: rgba(255, 255, 255, 0);
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     //border-bottom: 1px solid #f7f7f7;
     .navbar-toggler {
-        border-color: $theme-color;
-        &:focus,&:hover{
+        //border-color: $theme-color;
+        &:focus, &:hover {
             outline: none;
             cursor: pointer;
         }
@@ -19,18 +19,18 @@
     .navbar-nav {
         .nav-link {
             color: rgba(255, 255, 255, 1);
-            &:hover,&:focus{
+            &:hover, &:focus {
                 color: $theme-color;
             }
-            &.disabled{
-                color:$disabled-color !important;
+            &.disabled {
+                color: $disabled-color !important;
             }
         }
         .show > .nav-link,
         .active > .nav-link,
         .nav-link.show,
         .nav-link.active {
-            color: $theme-color;
+            // color: $theme-color;
         }
     }
 
@@ -38,10 +38,27 @@
     //transition-timing-function: ease;
     //transition-delay: 0s;
     //transition-duration: 0.5s;
-
     transition: all 0.5s ease 0s;
+
+    .nav-link-black {
+        color: rgba(0, 0, 0, 0.6) !important;
+    }
 }
 
-.nav-link-black{
-    color:rgba(0,0,0,0.6) !important;
+.navbar-tq-v2 {
+    background-color: rgba(255, 255, 255, 1);
+    .navbar-toggler {
+        //border-color: $theme-color;
+        &:focus, &:hover {
+            outline: none;
+            cursor: pointer;
+        }
+    }
+    .navbar-toggler-icon {
+        background-image: $navbar-tq-toggler-icon-bg-2;
+    }
+    .nav-link {
+        color: rgba(0, 0, 0, 0.6) !important;
+    }
 }
+

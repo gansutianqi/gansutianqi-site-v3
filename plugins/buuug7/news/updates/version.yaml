@@ -4,4 +4,4 @@
     - create_posts_table.php
     - create_categories_table.php
     - seed_categories_table.php
-    - seed_all_tables.php
+    - seed_posts_tables.php

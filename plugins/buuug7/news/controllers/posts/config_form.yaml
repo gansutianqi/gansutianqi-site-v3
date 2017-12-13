@@ -3,7 +3,7 @@
 # ===================================
 
 # Record name
-name: Post
+name: buuug7.news::lang.news.post
 
 # Model Form Field configuration
 form: $/buuug7/news/models/post/fields.yaml
@@ -16,16 +16,16 @@ defaultRedirect: buuug7/news/posts
 
 # Create page
 create:
-    title: Create Post
+    title: buuug7.news::lang.posts.create_post
     redirect: buuug7/news/posts/update/:id
     redirectClose: buuug7/news/posts
 
 # Update page
 update:
-    title: Edit Post
+    title: buuug7.news::lang.posts.edit_post
     redirect: buuug7/news/posts
     redirectClose: buuug7/news/posts
 
 # Preview page
 preview:
-    title: Preview Post
+    title: buuug7.news::lang.posts.preview_post

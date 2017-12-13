@@ -6,7 +6,9 @@ return [
         'description' => 'News Plugin',
     ],
     'news' => [
+        'post' => 'Post',
         'posts' => 'Posts',
+        'category' => 'Category',
         'categories' => 'Categories',
     ],
     'post' => [
@@ -27,19 +29,40 @@ return [
         'post_component_description' => 'Display a news post on the page.',
         'slug' => 'Slug',
         'slug_description' => 'look up the news post using the supplied slug value.',
-        'featured_image' => 'Featured image',
+        'featured_images' => 'Featured image',
+        'created_at' => 'Created at',
+        'updated_at' => 'Updated at',
     ],
     'posts' => [
-        
+        'create_post' => 'Create post',
+        'edit_post' => 'Edit post',
+        'new_post' => 'New post',
+        'preview_post' => 'Preview post',
+        'manage_posts' => 'Manage posts',
+        'creating_post' => 'Creating post...',
+        'saving_post' => 'Saving post...',
+        'deleting_post' => 'Deleting post...',
     ],
     'category' => [
         'name' => 'Name',
         'description' => 'Description',
         'parent_id' => 'Parent ID',
         'post_count' => 'Post count',
+        'created_at' => 'Created at',
+        'updated_at' => 'Updated at',
+        'slug' => 'Slug',
     ],
     'categories' => [
-
+        'create_category' => 'Create category',
+        'edit_category' => 'Edit category',
+        'new_category' => 'New category',
+        'preview_category' => 'Preview category',
+        'creating_category' => 'Creating category...',
+        'saving_category' => 'Saving category...',
+        'deleting_category' => 'Deleting category...',
+        'reorder' => 'Reorder',
+        'return_to_categories' => 'Return to categories',
+        'un_categoried' => 'Un categoried',
     ],
-    
+
 ];

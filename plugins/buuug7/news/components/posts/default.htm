@@ -3,13 +3,40 @@
 <ul class="news-posts">
     {% for post in posts %}
     <li class="news-posts__item">
-        <a class="news-posts__item-title" href="{{ post.url }}">{{ post.title }}</a>
-        <div class="news-posts__item-info">
-            published on {{ post.published_at|date('Y-m-d') }} in
-            {% for category in post.categories %}
+        {% if post.featured_images.count %}
+        <div class="news-posts__item-featured-images">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    {% for image in post.featured_images %}
+                    <div class="carousel-item {% if loop.first %}active{% endif %}">
+
+                        <img class="d-block w-100" src="{{ image.getThumb(200,100) }}" alt="First slide">
+                    </div>
+                    {% endfor %}
+                </div>
+                {% if post.featured_images.count > 1 %}
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </a>
+                {% endif %}
+            </div>
+        </div>
+        {% endif %}
+        <div>
+            <a class="news-posts__item-title" href="{{ post.url }}">{{ post.title }}</a>
+            <div class="news-posts__item-info">
+                {{ post.published_at|date('Y-m-d') }} 发布在
+                {% for category in post.categories %}
                 <a href="{{ category.url }}">{{ category.name }}</a>
                 {% if not loop.last %},{% endif %}
-            {% endfor %}
+                {% endfor %}
+            </div>
+            <div class="new-posts__item-summary">
+                {{ str_limit(post.summary,100) }}
+            </div>
         </div>
     </li>
     {% endfor %}

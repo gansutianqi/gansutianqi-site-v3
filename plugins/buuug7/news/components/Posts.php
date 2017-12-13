@@ -59,21 +59,28 @@ class Posts extends ComponentBase
 
     public function onRun()
     {
-        $this->postPage=$this->page['postPage']=$this->property('postPage');
+        $this->postPage = $this->page['postPage'] = $this->property('postPage');
         $this->categoryPage = $this->page['categoryPage'] = $this->property('categoryPage');
 
         $this->category = $this->page['category'] = $this->loadCategory();
-        $this->posts = $this->page['posts'] =  $this->listPosts();
+
+        if (!$this->category) {
+            return;
+        }
+
+        $this->posts = $this->page['posts'] = $this->listPosts();
 
         /*
          * If the page number is not valid,redirect
          * */
         $currentPage = input('page');
+
         $lastPage = $this->posts->lastPage();
-        if($currentPage > $lastPage && $currentPage >1){
+        if ($currentPage > $lastPage && $currentPage > 1) {
             //dd($currentPage);
-            return Redirect::to($this->currentPageUrl().'?page='.$lastPage);
+            return Redirect::to($this->currentPageUrl() . '?page=' . $lastPage);
         }
+
 
     }
 
@@ -89,21 +96,22 @@ class Posts extends ComponentBase
             'published' => true,
         ]);
 
-        $posts->each(function($post){
-            $post->setUrl($this->postPage,$this->controller);
-            $post->categories->each(function ($category){
-                $category->setUrl($this->categoryPage,$this->controller);
+        $posts->each(function ($post) {
+            $post->setUrl($this->postPage, $this->controller);
+            $post->categories->each(function ($category) {
+                $category->setUrl($this->categoryPage, $this->controller);
             });
         });
         return $posts;
     }
 
-    public function loadCategory(){
+    public function loadCategory()
+    {
         $slug = $this->property('category');
-        if(!$slug){
+        if (!$slug) {
             return null;
         }
-        $category = CategoryModel::where('slug',$slug)->first();
+        $category = CategoryModel::where('slug', $slug)->first();
         return $category;
     }
 

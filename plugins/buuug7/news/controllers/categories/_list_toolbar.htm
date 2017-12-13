@@ -2,7 +2,7 @@
     <a
         href="<?= Backend::url('buuug7/news/categories/create') ?>"
         class="btn btn-primary oc-icon-plus">
-        New Category
+        <?= e(trans('buuug7.news::lang.categories.new_category'))?>
     </a>
 
     <button
@@ -16,6 +16,9 @@
         data-trigger-condition="checked"
         data-request-success="$(this).prop('disabled', 'disabled')"
         data-stripe-load-indicator>
-        Delete selected
+        <?= e(trans('backend::lang.list.delete_selected')) ?>
     </button>
+    <a href="<?= Backend::url('buuug7/news/categories/reorder') ?>" class="btn btn-default oc-icon-sitemap">
+        <?= e(trans('buuug7.news::lang.categories.reorder')) ?>
+    </a>
 </div>

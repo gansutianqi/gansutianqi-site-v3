@@ -19,14 +19,17 @@ tabs:
         summary:
             tab: buuug7.news::lang.post.summary
             type: textarea
+            size: small
         categories:
             tab: buuug7.news::lang.post.categories
             type: relation
             span: auto
-        featured_image:
-            tab: buuug7.news::lang.post.featured_image
-            type: mediafinder
+        featured_images:
+            tab: buuug7.news::lang.post.featured_images
+            type: fileupload
             mode: image
+            imageWidth: 200
+            imageHeight: 100
         files:
             tab: buuug7.news::lang.post.files
             type: repeater

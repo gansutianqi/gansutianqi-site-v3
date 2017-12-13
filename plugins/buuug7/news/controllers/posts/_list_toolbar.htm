@@ -2,7 +2,7 @@
     <a
         href="<?= Backend::url('buuug7/news/posts/create') ?>"
         class="btn btn-primary oc-icon-plus">
-        New Post
+        <?= e(trans('buuug7.news::lang.posts.new_post'))?>
     </a>
 
     <button
@@ -16,6 +16,6 @@
         data-trigger-condition="checked"
         data-request-success="$(this).prop('disabled', 'disabled')"
         data-stripe-load-indicator>
-        Delete selected
+        <?= e(trans('backend::lang.list.delete_selected')) ?>
     </button>
 </div>

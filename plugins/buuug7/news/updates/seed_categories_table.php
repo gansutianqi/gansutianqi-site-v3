@@ -8,9 +8,8 @@ class SeedCategoriesTable extends Seeder
     public function run()
     {
         Category::create([
-            'name' => 'Root',
-            'slug' => 'Root',
-            'description' => 'default root',
+            'name' => trans('buuug7.news::lang.categories.un_categoried'),
+            'slug' => 'un-categoried',
         ]);
     }
 }
