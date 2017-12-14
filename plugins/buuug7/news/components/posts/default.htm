@@ -26,4 +26,20 @@
     {% endfor %}
 </ul>
 
-{{ posts.render|raw }}
+{% if posts.hasPages() %}
+<ul class="pagination">
+    <!-- Previous page link -->
+    {% if posts.onFirstPage() %}
+    <li class="page-item disabled"><span class="page-link"><i class="fa fa-angle-double-left"></i></span></li>
+    {% else %}
+    <li class="page-item"><a class="page-link" href="{{ posts.previousPageUrl() }}" rel="prev"><i class="fa fa-angle-double-left"></i></a></li>
+    {% endif %}
+
+    <!-- Next page link -->
+    {% if posts.hasMorePages %}
+    <li class="page-item"><a class="page-link" href="{{ posts.nextPageUrl() }}" rel="next"><i class="fa fa-angle-double-right"></i></a></li>
+    {% else %}
+    <li class="page-item disabled"><span class="page-link"><i class="fa fa-angle-double-right"></i></span></li>
+    {% endif %}
+</ul>
+{% endif %}
