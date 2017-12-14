@@ -4,22 +4,21 @@
 
 .news-post {
     background-color: #fff;
-    padding: 1rem;
     .news-post__title {
         font-size: 1.3rem;
         color: rgba(0, 0, 0, 0.8);
-        margin-bottom: 5px;
+        padding: 1rem;
     }
     .news-post__info {
         font-size: 0.9rem;
         color: rgba(0, 0, 0, 0.4);
-        margin-bottom: 1rem;
+        padding-left: 1rem;
         > a {
            // color: rgba(0, 0, 0, 0.6);
         }
     }
 
     .news-post__content {
-        padding-top: 1rem;
+        padding: 1rem;
     }
 }
