@@ -198,14 +198,10 @@
     display: block;
     color: rgba(0, 0, 0, 0.8);
     text-decoration: none;
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem; }
+    font-size: 1.2rem; }
   .news-posts .news-posts__item-info {
     color: rgba(0, 0, 0, 0.4);
-    font-size: 0.85rem;
-    margin-bottom: 0.5rem; }
-    .news-posts .news-posts__item-info a {
-      color: rgba(0, 0, 0, 0.8); }
+    font-size: 0.85rem; }
   .news-posts .new-posts__item-summary {
     color: rgba(0, 0, 0, 0.6);
     font-size: 1rem; }
