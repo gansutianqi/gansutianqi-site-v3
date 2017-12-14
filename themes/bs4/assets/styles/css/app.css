@@ -228,6 +228,9 @@
   list-style: none;
   padding: 1rem;
   background-color: #fff; }
+  .news-category-list a {
+    display: inline-block;
+    padding: 3px 0; }
   .news-category-list ul {
     padding-left: 30px; }
 

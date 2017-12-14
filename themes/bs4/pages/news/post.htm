@@ -2,11 +2,15 @@ title = 'post'
 url = '/news/post/:slug'
 layout = 'layout-v2'
 [newsPost]
+[newsCategories]
 ==
 <div class="container">
     <div class="row">
         <div class="col-md-8">
             {% component 'newsPost' %}
+        </div>
+        <div class="col-md-4">
+            {% component 'newsCategories' %}
         </div>
     </div>
 
