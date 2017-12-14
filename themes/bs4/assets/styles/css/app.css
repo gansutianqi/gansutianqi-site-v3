@@ -224,6 +224,13 @@
   .news-post .news-post__content {
     padding: 1rem; }
 
+.news-category-list {
+  list-style: none;
+  padding: 1rem;
+  background-color: #fff; }
+  .news-category-list ul {
+    padding-left: 30px; }
+
 body {
   font-family: "Hiragino Sans GB", "Microsoft YaHei", arial, Tahoma, SimSun, sans-serif; }
 

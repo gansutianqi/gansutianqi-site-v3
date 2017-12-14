@@ -3,12 +3,17 @@ url = '/news/posts/:category/:page?'
 layout = 'layout-v2'
 [newsPosts]
 postsPerPage = 2
+[newsCategories]
+slug = {{ :category }}
 ==
 
 <div class="container">
     <div class="row">
         <div class="col-md-8">
             {% component 'newsPosts' %}
+        </div>
+        <div class="col-md-4">
+            {% component 'newsCategories' %}
         </div>
     </div>
 </div>
