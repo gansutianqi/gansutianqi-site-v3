@@ -4,7 +4,7 @@
  |--------------------------------------------------------------------------
  |
  | Created by puguohong on 09/10/2017.
- | 
+ |
  |
 */
 
@@ -13,11 +13,13 @@
 import styles from '../../styles/scss/app.scss';
 
 import navbarScroll from './navbar-scroll.js';
-import slideCarouselBanner1 from './slick-carousel-banner-1';
-import slideCarouselPartner from './slick-carousel-partner';
+import slickCarouselBanner1 from './slick-carousel-banner-1';
+import slickCarouselPartner from './slick-carousel-partner';
+import slickCarouselNewsPostFeaturedImages from './slick-carousel-news-post-featured-images';
 
 $(function($) {
     navbarScroll();
-    slideCarouselBanner1();
-    slideCarouselPartner();
+    slickCarouselBanner1();
+    slickCarouselPartner();
+    slickCarouselNewsPostFeaturedImages();
 });

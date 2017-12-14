@@ -5,24 +5,8 @@
     <li class="news-posts__item">
         {% if post.featured_images.count %}
         <div class="news-posts__item-featured-images">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                    {% for image in post.featured_images %}
-                    <div class="carousel-item {% if loop.first %}active{% endif %}">
-
-                        <img class="d-block w-100" src="{{ image.getThumb(200,100) }}" alt="First slide">
-                    </div>
-                    {% endfor %}
-                </div>
-                {% if post.featured_images.count > 1 %}
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                </a>
-                {% endif %}
-            </div>
+            <!-- only get the first featured image -->
+            <img class="d-block w-100" src="{{ post.featured_images[0].getThumb(200,100) }}" alt="First slide">
         </div>
         {% endif %}
         <div>

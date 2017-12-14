@@ -17,7 +17,7 @@ export default function slickCarouselPartner() {
                 }
             },
             {
-                breakpoint: 1024,
+                breakpoint: 992,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1,
@@ -26,7 +26,7 @@ export default function slickCarouselPartner() {
                 }
             },
             {
-                breakpoint: 600,
+                breakpoint: 769,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1,
@@ -35,7 +35,7 @@ export default function slickCarouselPartner() {
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 576,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,

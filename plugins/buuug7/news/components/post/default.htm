@@ -2,32 +2,37 @@
 
 <div class="news-post">
 
-    {% if post.featured_image %}
-    <div class="news-post__featured-image">
-        <img
-                data-src="{{ post.featued_image|media }}"
-                src="{{ post.featured_image|media }}"
-                alt="post image"
-                style="max-width: 100%"
-        >
-    </div>
-    {% endif %}
-
-    <div class="news-post__info">
-        Posted
-        {% if post.categories.count %}
-        in
-            {% for category in post.categories %}
-                 <a href="/news/posts/{{ category.name}}">{{ category.name }}</a>
-                {% if not loop.last %},{% endif %}
-            {% endfor %}
-        {% endif %}
-        on {{ post.published_at|date('Y M d') }}
-    </div>
-
     <div class="news-post__title">
         {{ post.title }}
     </div>
+
+    <div class="news-post__info">
+        {{ post.published_at|date('Y/m/d') }} 发布在
+        {% if post.categories.count %}
+        {% for category in post.categories %}
+        <a href="/news/posts/{{ category.slug}}">{{ category.name }}</a>
+        {% if not loop.last %},{% endif %}
+        {% endfor %}
+        {% endif %}
+    </div>
+
+    {% if post.featured_images.count %}
+    <div class="news-post__featured-images">
+        {% if post.featured_images.count == 1 %}
+        <a href="#">
+            <img src="{{ post.featured_images[0].path }}" class="d-block w-100">
+        </a>
+        {% else %}
+        <div class="slick-carousel-news-post-featured-images">
+            {% for image in post.featured_images %}
+            <a href="#">
+                <img src="{{ image.path }}" class="w-100">
+            </a>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+    {% endif %}
 
     <div class="news-post__content">
         {{ post.content|raw }}

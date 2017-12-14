@@ -3,6 +3,11 @@ url = '/news/post/:slug'
 layout = 'layout-v2'
 [newsPost]
 ==
-<div class="container m-t">
-{% component 'newsPost' %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            {% component 'newsPost' %}
+        </div>
+    </div>
+
 </div>
