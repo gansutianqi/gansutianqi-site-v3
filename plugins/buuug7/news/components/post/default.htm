@@ -5,13 +5,13 @@
     {% if post.featured_images.count %}
     <div class="news-post__featured-images">
         {% if post.featured_images.count == 1 %}
-        <a href="#">
+        <a href="javascript;">
             <img src="{{ post.featured_images[0].path }}" class="d-block w-100">
         </a>
         {% else %}
         <div class="slick-carousel-news-post-featured-images">
             {% for image in post.featured_images %}
-            <a href="#">
+            <a href="javascript;">
                 <img src="{{ image.path }}" class="w-100">
             </a>
             {% endfor %}
