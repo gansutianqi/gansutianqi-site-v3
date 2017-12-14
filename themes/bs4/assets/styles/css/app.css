@@ -212,7 +212,8 @@
  * @
  **/
 .news-post {
-  background-color: #fff; }
+  background-color: #fff;
+  margin-bottom: 1rem; }
   .news-post .news-post__title {
     font-size: 1.3rem;
     color: rgba(0, 0, 0, 0.8);
