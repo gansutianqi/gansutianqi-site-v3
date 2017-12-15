@@ -40,7 +40,7 @@
     background-color: rgba(0, 0, 0, 0.5) !important; }
 
 .bg-overlay2:after {
-  background-color: transparent !important; }
+  background-color: rgba(0, 0, 0, 0.3) !important; }
 
 .card--no-border {
   border: none !important;
