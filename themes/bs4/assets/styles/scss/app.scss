@@ -12,13 +12,11 @@
 @import "functions";
 @import "variables";
 @import "utils";
+
+@import "common";
 @import "navbar";
-@import "banner";
+@import "slick-related";
 @import "footer";
 @import "news-posts";
 @import "news-post";
 @import "news-category-list";
-
-body{
-    font-family: "Hiragino Sans GB", "Microsoft YaHei", arial, Tahoma, SimSun, sans-serif;
-}
