@@ -18,6 +18,7 @@ import slickCarouselPartner from './slick-carousel-partner';
 import slickCarouselNewsPostFeaturedImages from './slick-carousel-news-post-featured-images';
 
 $(function($) {
+    new WOW().init();
     navbarScroll();
     slickCarouselBanner1();
     slickCarouselPartner();
