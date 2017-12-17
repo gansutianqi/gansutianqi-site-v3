@@ -6,8 +6,13 @@ export default function navbarScroll() {
         return;
     }
 
+    let $navbarBrand = $navbar.find('.navbar-brand > img');
+    let $imgSrc = $navbarBrand.attr('src');
+
     $navbar.on('show.bs.collapse', function (e) {
         $navbar.addClass('bg-white').find('.nav-link').addClass('nav-link-black');
+        // switch img src
+        $navbarBrand.attr('src',$imgSrc.replace(/logo-v3/,'logo-v2'));
     });
 
     $navbar.on('hide.bs.collapse', function (e) {
@@ -18,12 +23,18 @@ export default function navbarScroll() {
 
     window.onscroll = function () {
         let $navbarLink = $navbar.find('.nav-link');
+
         if ($navbar.offset().top >= $navbar.height() * 1.5) {
             $navbar.addClass('box-shadow bg-white');
             $navbarLink.addClass('nav-link-black');
+            // switch img src
+            $navbarBrand.attr('src',$imgSrc.replace(/logo-v3/,'logo-v2'));
+
         } else {
             $navbar.removeClass('box-shadow bg-white');
             $navbarLink.removeClass('nav-link-black');
+            // switch img src
+            $navbarBrand.attr('src',$imgSrc.replace(/logo-v2/,'logo-v3'));
         }
     };
 }

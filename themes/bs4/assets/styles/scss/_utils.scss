@@ -39,10 +39,31 @@
     }
 }
 
+.bg-overlay1 {
+    @extend .bg-overlay;
+    &:after {
+        background-color: rgba(0, 0, 0, 0.1) !important;
+    }
+}
+
 .bg-overlay2 {
     @extend .bg-overlay;
     &:after {
+        background-color: rgba(0, 0, 0, 0.2) !important;
+    }
+}
+
+.bg-overlay3 {
+    @extend .bg-overlay;
+    &:after {
         background-color: rgba(0, 0, 0, 0.3) !important;
+    }
+}
+
+.bg-overlay4 {
+    @extend .bg-overlay;
+    &:after {
+        background-color: rgba(0, 0, 0, 0.5) !important;
     }
 }
 
