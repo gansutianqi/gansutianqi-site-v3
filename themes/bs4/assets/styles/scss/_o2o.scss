@@ -1,0 +1,107 @@
+.o2o-section-1 {
+    padding: 6rem 0;
+}
+
+.o2o-section-2 {
+    padding: 6rem 0;
+    background-image: url("/themes/bs4/assets/images/bg/intersection.png");
+    background-size: contain;
+    background-position: center;
+    .item {
+        text-align: center;
+        .counter {
+            width: 130px;
+            height: 130px;
+            padding: 28px;
+            position: relative;
+            text-align: center;
+            display: inline-block;
+            border-radius: 50% !important;
+            background: rgba(0, 0, 0, 0.6);
+            opacity: 0.8;
+            border: 3px solid #fff;
+            font-size: 40px;
+            font-weight: bold;
+            color: #fff;
+        }
+        p {
+            margin-top: 1rem;
+            color: rgba(0, 0, 0, 0.6);
+        }
+    }
+}
+
+.o2o-section-3 {
+    padding: 6rem 0;
+    border-bottom: 1px solid #eee;
+    .item {
+        text-align: center;
+        color: rgba(0, 0, 0, 0.6);
+        > i {
+            font-size: 5rem;
+        }
+
+    }
+}
+
+.o2o-section-4 {
+    padding: 6rem 0;
+    background-color: #f7f7f7;
+    .item{
+        display: flex;
+        flex-direction: row;
+        //justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        padding:10px 15px;
+        min-height: 10rem;
+        margin-bottom: 15px;
+    }
+
+    .item__icons{
+        width:45px;
+        height:52px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+
+    .item__des{
+        margin-left: 15px;
+    }
+
+    .item__icons1{
+        background-image: url("/themes/bs4/assets/images/o2o/yx01.png");
+    }
+    .item__icons2{
+        background-image: url("/themes/bs4/assets/images/o2o/yx02.png");
+    }
+    .item__icons3{
+        background-image: url("/themes/bs4/assets/images/o2o/yx03.png");
+    }
+    .item__icons4{
+        background-image: url("/themes/bs4/assets/images/o2o/yx04.png");
+    }
+    .item__icons5{
+        background-image: url("/themes/bs4/assets/images/o2o/yx05.png");
+    }
+
+    .item__icons6{
+        background-image: url("/themes/bs4/assets/images/o2o/yx06.png");
+    }
+
+    .item__icons7{
+        background-image: url("/themes/bs4/assets/images/o2o/yx07.png");
+    }
+
+    .item__icons8{
+        background-image: url("/themes/bs4/assets/images/o2o/yx08.png");
+    }
+
+
+
+}
+
+
+

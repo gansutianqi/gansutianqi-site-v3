@@ -1,5 +1,5 @@
-.slick-carousel-banner-1{
-    .slick-carousel-banner-1-inner{
+.slick-carousel-banner-1 {
+    .slick-carousel-banner-1-inner {
         position: relative;
         z-index: 3;
         height: 100%;
@@ -7,24 +7,46 @@
         align-items: center;
         flex-direction: row;
     }
-    .slick-carousel-banner-1-title{
+    .slick-carousel-banner-1-title {
         font-size: 2rem;
-        color:#fff;
+        color: #fff;
         margin-bottom: 1rem;
     }
-    .slick-carousel-banner-1-buttons{
+
+    .slick-carousel-banner-1-buttons {
         margin-bottom: 1rem;
     }
-    .slick-carousel-banner-1-description{
+
+    .slick-carousel-banner-1-description {
         max-width: 900px;
-        margin-top:3rem;
-        color:rgba(255,255,255,0.7);
+        margin-top: 3rem;
+        color: rgba(255, 255, 255, 0.7);
     }
-    .slick-dots{
+    .slick-dots {
         bottom: 25px !important;
-        li button:before{
-            color:#fff !important;
+        li button:before {
+            color: #fff !important;
             font-size: 14px !important;
+        }
+    }
+
+    @media (max-width: $sm) {
+        .slick-carousel-banner-1-title {
+            font-size: 1.25rem;
+            text-align: center;
+        }
+        .slick-carousel-banner-1-buttons {
+            margin-bottom: 1rem;
+            text-align: center;
+            >.btn-lg{
+                padding: 0.25rem 0.5rem;
+                font-size: 0.875rem;
+                line-height: 1.5;
+                border-radius: 0.2rem;
+            }
+        }
+        .slick-carousel-banner-1-description {
+            display: none;
         }
     }
 }

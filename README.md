@@ -23,3 +23,6 @@ gansutianqi official site,build on top of [october CMS](https://github.com/octob
 + theme
     + run `yarn run bulid` to compile assert of bs4 theme
     + run `yarn run watch` to watch and compile the theme assert
+    
+## npm & yarn issue
++ add package or install new package with `--no-bin-links` options.    

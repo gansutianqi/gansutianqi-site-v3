@@ -8,7 +8,9 @@
     "bootstrap": "4.0.0-beta",
     "feather-icons": "^3.3.0",
     "font-awesome": "^4.7.0",
+    "ionicons": "driftyco/ionicons",
     "jquery": "3.2.1",
+    "mdi": "^2.1.19",
     "popper.js": "1.11.0",
     "slick-carousel": "^1.8.1",
     "wowjs": "^1.1.3"
