@@ -1,0 +1,50 @@
+
+.game-section-1 {
+    padding: 6rem 0;
+    .item {
+        color: #fff;
+        @extend .bg-overlay3;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 1rem;
+        height: 25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin-bottom: 1rem;
+        p {
+
+        }
+    }
+    .item1 {
+        background-image: url("/themes/bs4/assets/images/game/yy.jpg");
+    }
+    .item2 {
+        background-image: url("/themes/bs4/assets/images/game/sy.jpg");
+    }
+    .item3 {
+        background-image: url("/themes/bs4/assets/images/game/yl.jpg");
+    }
+}
+
+.game-section-2 {
+    padding: 6rem 0;
+    background-color: #f7f7f7;
+    .item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: #fff;
+        padding:1rem;
+        margin-bottom: 1rem;
+        min-height: 10rem;
+    }
+    .item__icon {
+        font-size: 4rem;
+        color:$theme-color ;
+    }
+    .item__des {
+        margin-left: 1rem;
+    }
+}
