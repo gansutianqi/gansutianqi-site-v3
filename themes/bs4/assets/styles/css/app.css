@@ -63,7 +63,7 @@
   background-color: #eee !important; }
 
 body {
-  font-family: "Hiragino Sans GB", "Microsoft YaHei", arial, Tahoma, SimSun, sans-serif; }
+  font-family: "Microsoft YaHei", "Hiragino Sans GB", sans-serif, arial, Tahoma; }
 
 .border-bottom-dark {
   border-bottom: 1px solid #e9ecef !important; }
@@ -74,7 +74,7 @@ body {
 .navbar-tq-v1 {
   background-color: rgba(255, 255, 255, 0);
   font-size: 1.1rem;
-  transition: all 0.5s ease 0s; }
+  transition: all 1s ease 0s; }
   .navbar-tq-v1 .navbar-toggler:focus, .navbar-tq-v1 .navbar-toggler:hover {
     outline: none;
     cursor: pointer; }
@@ -275,7 +275,6 @@ body {
   background-color: #f0f0f0; }
   .tbdp-section-1 .container > h3 {
     color: #555;
-    font-weight: bold;
     text-align: center; }
   .tbdp-section-1 .container > p {
     margin-top: 15px;
@@ -293,11 +292,9 @@ body {
 
 .tbdp-section-2 {
   background-color: #BA292E;
-  padding: 2rem 0; }
+  padding: 3rem 0; }
   .tbdp-section-2 .container .text-center {
     color: #fff; }
-    .tbdp-section-2 .container .text-center > h3 {
-      font-weight: bold; }
     .tbdp-section-2 .container .text-center > p {
       font-size: 1.2rem;
       color: rgba(255, 255, 255, 0.9);
@@ -308,7 +305,6 @@ body {
   background-color: #f0f0f0; }
   .tbdp-section-3 .container > h3 {
     color: #555;
-    font-weight: bold;
     text-align: center; }
   .tbdp-section-3 .container > p {
     margin-top: 15px;
@@ -341,7 +337,6 @@ body {
   padding: 6rem 0; }
   .tbdp-section-5 .container .text-center > h3 {
     color: #555;
-    font-weight: bold;
     text-align: center; }
   .tbdp-section-5 .container .text-center > p {
     margin-top: 15px;
