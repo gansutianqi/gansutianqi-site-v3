@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "build": "webpack",
-    "watch": "webpack --watch --watch-poll"
+    "build": "node node_modules/webpack/bin/webpack.js",
+    "watch": "node node_modules/webpack/bin/webpack.js --watch --watch-poll"
   },
   "dependencies": {
     "animate.css": "^3.5.2",
