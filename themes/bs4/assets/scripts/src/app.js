@@ -16,6 +16,7 @@ import navbarScroll from './navbar-scroll.js';
 import slickCarouselBanner1 from './slick-carousel-banner-1';
 import slickCarouselPartner from './slick-carousel-partner';
 import slickCarouselNewsPostFeaturedImages from './slick-carousel-news-post-featured-images';
+import slickCarouselAnli from './slick-carousel-anli';
 
 $(function($) {
     new WOW().init();
@@ -23,4 +24,5 @@ $(function($) {
     slickCarouselBanner1();
     slickCarouselPartner();
     slickCarouselNewsPostFeaturedImages();
+    slickCarouselAnli();
 });

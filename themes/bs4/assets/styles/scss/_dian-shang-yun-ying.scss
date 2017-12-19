@@ -1,0 +1,44 @@
+.dsyy-section-1 {
+    padding: 6rem 0;
+    //border-bottom: 1px solid #eee;
+    .item {
+        > i {
+            font-size: 6rem;
+            color: rgba(0, 0, 0, 0.6);
+        }
+        p {
+            color: #868e96;
+        }
+    }
+}
+
+.dsyy-section-2 {
+    padding: 6rem 0;
+    background-color: #f7f7f7;
+    .row img {
+        margin-bottom: 1rem;
+    }
+}
+
+.dsyy-section-3 {
+    padding: 6rem 0;
+    .item {
+        margin-bottom: 1rem;
+        text-align: center;
+        > i {
+            font-size: 6rem;
+            color: rgba(0, 0, 0, 0.6);
+        }
+    }
+}
+
+.dsyy-section-4{
+    background-image: url("/themes/bs4/assets/images/bg/bg16.png");
+    background-size: cover;
+    background-position: center;
+    @extend .bg-overlay3;
+    padding: 6rem 0;
+    .container{
+        color:#fff;
+    }
+}
