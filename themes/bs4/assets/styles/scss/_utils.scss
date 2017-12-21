@@ -75,7 +75,25 @@
     }
 }
 
-.card-body-dark{
+.card-body-dark {
     background-color: #eee !important;
 }
 
+.info-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    background-color: #f8f9fa;
+    color: #fff;
+    margin-bottom: 1rem;
+    .info-box__top {
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 0.8rem;
+    }
+    .info-box__down {
+        margin-top:10px;
+        font-size: 1.2rem;
+    }
+
+}

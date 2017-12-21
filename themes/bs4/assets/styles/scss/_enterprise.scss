@@ -1,0 +1,36 @@
+.enterprise-section-1 {
+    padding: 6rem 0;
+
+    .item {
+        text-align: center;
+        > i {
+            font-size: 5rem;
+        }
+    }
+}
+
+.enterprise-section-2 {
+    padding: 6rem 0;
+    background-color: #f7f7f7;
+    .item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: #fff;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        min-height: 10rem;
+    }
+    .item__icon {
+        font-size: 4rem;
+        color: $theme-color;
+    }
+    .item__des {
+        margin-left: 1rem;
+    }
+}
+
+.enterprise-section-3 {
+    padding: 6rem 0;
+
+}
