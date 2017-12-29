@@ -11,10 +11,9 @@
             <div class="col-md-4 tq-footer-v2__block">
                 <h3 class="tq-footer-v2__block-title">公司动态</h3>
                 <ul class="list-unstyled">
-                    <li class="mb-4"><a href="#">庆祝公司成立三周年</a></li>
-                    <li class="mb-4"><a href="#">2017我们继续前行</a></li>
-                    <li class="mb-4"><a href="#">我们从来都没有停止过进步，2016新的开始</a></li>
-                    <li class="mb-4"><a href="#">天奇用户中心正式部署使用</a></li>
+                    {% for post in latestPosts %}
+                    <li class="mb-4"><a href="/news/post/{{ post.slug }}">{{ post.title }}</a></li>
+                    {% endfor %}
                 </ul>
             </div>
             <div class="col-md-4 tq-footer-v2__block">

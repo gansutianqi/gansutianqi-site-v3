@@ -1,78 +1,82 @@
 description = "Default layout"
 ==
+function onstart(){
+    $this['latestPosts'] = \Buuug7\News\Models\Post::latest(5);
+}
+==
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>{{ this.theme.site_name }} | {{ this.page.title }}</title>
-        <meta name="keywords" content="{{ this.theme.keywords }}">
-        <meta name="description" content="{{ this.page.meta_description }}">
-        <meta name="title" content="{{ this.page.meta_title }}">
-        <meta name="author" content="buuug7">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+    <meta charset="utf-8">
+    <title>{{ this.theme.site_name }} | {{ this.page.title }}</title>
+    <meta name="keywords" content="{{ this.theme.keywords }}">
+    <meta name="description" content="{{ this.page.meta_description }}">
+    <meta name="title" content="{{ this.page.meta_title }}">
+    <meta name="author" content="buuug7">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <link rel="icon" sizes="192x192" href="{{ 'assets/images/logo-192x192.png'|theme }}">
-        <link rel="shortcut icon" href="{{ 'assets/images/logo-128x128.png'|theme }}">
-        <link rel="apple-touch-icon" href="{{ 'assets/images/logo-128x128.png'|theme }}">
+    <link rel="icon" sizes="192x192" href="{{ 'assets/images/logo-192x192.png'|theme }}">
+    <link rel="shortcut icon" href="{{ 'assets/images/logo-128x128.png'|theme }}">
+    <link rel="apple-touch-icon" href="{{ 'assets/images/logo-128x128.png'|theme }}">
 
-        <!--animate.css-->
-        <link rel="stylesheet" href="{{ 'assets/vendor/animate.css/animate.min.css'|theme }}">
+    <!--animate.css-->
+    <link rel="stylesheet" href="{{ 'assets/vendor/animate.css/animate.min.css'|theme }}">
 
-        <!--bootstrap-->
-        <link rel="stylesheet" href="{{ 'assets/vendor/bootstrap/dist/css/bootstrap.css'|theme }}">
+    <!--bootstrap-->
+    <link rel="stylesheet" href="{{ 'assets/vendor/bootstrap/dist/css/bootstrap.css'|theme }}">
 
-        <!--font-awesome-->
-        <link rel="stylesheet" href="{{ 'assets/vendor/font-awesome/css/font-awesome.css'|theme }}">
+    <!--font-awesome-->
+    <link rel="stylesheet" href="{{ 'assets/vendor/font-awesome/css/font-awesome.css'|theme }}">
 
-        <!--mdi-->
-        <link rel="stylesheet" href="{{ 'assets/vendor/mdi/css/materialdesignicons.min.css'|theme }}">
+    <!--mdi-->
+    <link rel="stylesheet" href="{{ 'assets/vendor/mdi/css/materialdesignicons.min.css'|theme }}">
 
-        <!--slick carousel-->
-        <link rel="stylesheet" href="{{ 'assets/vendor/slick-carousel/slick/slick.css'|theme }}">
-        <link rel="stylesheet" href="{{ 'assets/vendor/slick-carousel/slick/slick-theme.css'|theme }}">
+    <!--slick carousel-->
+    <link rel="stylesheet" href="{{ 'assets/vendor/slick-carousel/slick/slick.css'|theme }}">
+    <link rel="stylesheet" href="{{ 'assets/vendor/slick-carousel/slick/slick-theme.css'|theme }}">
 
-        <!--app-->
-        <link rel="stylesheet" href="{{ 'assets/styles/css/app.css'|theme }}">
-        {% styles %}
-    </head>
-    <body class="">
+    <!--app-->
+    <link rel="stylesheet" href="{{ 'assets/styles/css/app.css'|theme }}">
+    {% styles %}
+</head>
+<body class="">
 
-        <!-- Header -->
-        <header id="layout-header">
-            {% partial 'site/header-v1' %}
-        </header>
+<!-- Header -->
+<header id="layout-header">
+    {% partial 'site/header-v1' %}
+</header>
 
-        <!-- Content -->
-        <section id="layout-content">
-            {% page %}
-        </section>
+<!-- Content -->
+<section id="layout-content">
+    {% page %}
+</section>
 
-        <!-- Footer -->
-        <footer id="layout-footer">
-            {% partial 'site/footer-v2' %}
-        </footer>
+<!-- Footer -->
+<footer id="layout-footer">
+    {% partial 'site/footer-v2' %}
+</footer>
 
-        <!-- Scripts -->
+<!-- Scripts -->
 
-        <!--jquery-->
-        <script src="{{ 'assets/vendor/jquery/dist/jquery.js'|theme }}"></script>
+<!--jquery-->
+<script src="{{ 'assets/vendor/jquery/dist/jquery.js'|theme }}"></script>
 
-        <!--popper.js-->
-        <script src="{{ 'assets/vendor/popper.js/dist/umd/popper.min.js'|theme }}"></script>
+<!--popper.js-->
+<script src="{{ 'assets/vendor/popper.js/dist/umd/popper.min.js'|theme }}"></script>
 
-        <!--bootstrap-->
-        <script src="{{ 'assets/vendor/bootstrap/dist/js/bootstrap.js'|theme }}"></script>
+<!--bootstrap-->
+<script src="{{ 'assets/vendor/bootstrap/dist/js/bootstrap.js'|theme }}"></script>
 
-        <!--slick carousel-->
-        <script src="{{ 'assets/vendor/slick-carousel/slick/slick.js'|theme }}"></script>
+<!--slick carousel-->
+<script src="{{ 'assets/vendor/slick-carousel/slick/slick.js'|theme }}"></script>
 
-        <!--wowjs-->
-        <script src="{{ 'assets/vendor/wowjs/dist/wow.min.js'|theme }}"></script>
+<!--wowjs-->
+<script src="{{ 'assets/vendor/wowjs/dist/wow.min.js'|theme }}"></script>
 
-        <!--app.js-->
-        <script src="{{ 'assets/scripts/app.bundle.js'|theme }}"></script>
-        {% framework extras %}
-        {% scripts %}
+<!--app.js-->
+<script src="{{ 'assets/scripts/app.bundle.js'|theme }}"></script>
+{% framework extras %}
+{% scripts %}
 
-    </body>
+</body>
 </html>

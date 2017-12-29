@@ -283,6 +283,8 @@ body {
     padding-left: 1rem; }
   .news-post .news-post__content {
     padding: 1rem; }
+    .news-post .news-post__content img {
+      max-width: 100%; }
 
 .news-category-list {
   list-style: none;

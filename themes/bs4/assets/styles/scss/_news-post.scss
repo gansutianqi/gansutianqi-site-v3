@@ -15,11 +15,14 @@
         color: rgba(0, 0, 0, 0.4);
         padding-left: 1rem;
         > a {
-           // color: rgba(0, 0, 0, 0.6);
+            // color: rgba(0, 0, 0, 0.6);
         }
     }
 
     .news-post__content {
         padding: 1rem;
+        img {
+            max-width: 100%;
+        }
     }
 }

@@ -153,7 +153,13 @@ class Post extends Model
             $params['category'] = $this->categories->count() ? $this->categories->first()->slug : null;
         }
 
-        return $this->url = $controller->pageUrl($pageName,$params);
+        return $this->url = $controller->pageUrl($pageName, $params);
+    }
+
+
+    public function scopeLatest($query, $limit)
+    {
+        return $query->isPublished()->orderBy('published_at', 'Desc')->limit($limit)->get();
     }
 
 
