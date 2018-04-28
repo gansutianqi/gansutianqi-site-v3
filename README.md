@@ -23,6 +23,9 @@ gansutianqi official site,build on top of [october CMS](https://github.com/octob
 + theme
     + run `yarn run bulid` to compile assert of bs4 theme
     + run `yarn run watch` to watch and compile the theme assert
-    
+
+## the frontend branch
+the frontend branch contains the template build by [YANJF123](https://github.com/YANJF123) and [zwj1007](https://github.com/orgs/gansutianqi/people/zwj1007). It has not been used yet.
+
 ## npm & yarn issue
 + add package or install new package with `--no-bin-links` options.    
